@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.62ccf894.css",
+    "main.js": "/static/js/main.c9464fce.js",
+    "static/media/backgroundCode.png": "/static/media/backgroundCode.97e14aa16035f57d9c40.png",
+    "static/media/doc2.png": "/static/media/doc2.3df9375c73aac3f723d7.png",
+    "static/media/sportSkor.png": "/static/media/sportSkor.f4fa86f352a15c469893.png",
+    "static/media/doc1.png": "/static/media/doc1.ecfbc6a1d013b9af3889.png",
+    "static/media/profil-bild.png": "/static/media/profil-bild.465e9fac05f860721901.png",
+    "static/media/lakarDatabas.png": "/static/media/lakarDatabas.186aadd7f76d087130f0.png",
+    "index.html": "/index.html",
+    "main.62ccf894.css.map": "/static/css/main.62ccf894.css.map",
+    "main.c9464fce.js.map": "/static/js/main.c9464fce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62ccf894.css",
+    "static/js/main.c9464fce.js"
+  ]
+}

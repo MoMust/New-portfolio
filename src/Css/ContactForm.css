@@ -1,0 +1,72 @@
+.body-class-contact-form {
+  background-color: black;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-family: "Staatliches", cursive;
+}
+.container {
+  font-family: "Staatliches", cursive;
+  width: 70%;
+  height: 50%;
+  margin-top: 100px;
+}
+
+/* Form */
+.form-container h1 {
+  color: rgb(125, 157, 142);
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.form input,
+textarea {
+  width: 35%;
+  height: 60px;
+  border-radius: 10px;
+  background-color: rgb(45, 59, 41);
+  border:none;
+  color: white;
+}
+
+.form textarea {
+  height: 100px;
+}
+
+.submit-button{
+    
+    background-color: rgb(21, 97, 152);
+    color: rgb(198, 191, 191);
+    font-weight: 600;
+    border-radius: 5px;
+    border:none;
+}
+
+.submit-button:hover{
+    background-color: blue;
+    transition: 1s;
+}
+/* Form slut*/
+
+/* Modal */
+
+.modal {
+  margin-top: 50px;
+  
+}
+.modal-content{
+    background-color: rgba(35, 32, 32, 0.952)!important;
+}
+
+.modal-body {
+  font-size: 30px;
+}
+.modal-body p {
+  color: rgb(71, 157, 117);
+}
+
+.modal-backdrop{
+    display:none;
+}

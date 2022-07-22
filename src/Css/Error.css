@@ -1,0 +1,21 @@
+.body-class-error{
+    padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-family: "Staatliches", cursive;
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.body-class-error h1{
+   color: rgb(125, 157, 142);;
+}
+
+
+.return{
+    cursor: pointer;
+    font-size: 30px;
+}

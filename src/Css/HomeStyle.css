@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/* WALLPAPER FOR ALL PAGES SLUT*/
+.body-class {
+  
+  /* background-image: url(/src/Images/backgroundCode.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  /* height: 91.6vh; */
+  height: -webkit-calc(100vh - 50px);
+
+}
+
+/* .logo{
+  font-family: 'Staatliches', cursive;
+  height:70px;
+  display:flex;
+  justify-content: center;
+ 
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin-bottom: 7.5em;
+} */
+/* .logo>h2{
+font-size: 47px;
+font-weight: 500;
+} */
+.front-text {
+  
+  font-family: 'Staatliches', cursive;
+}
+
+.container-front{
+  
+}
+
+.front-text h2 {
+  width: 100%;
+  font-size: 3vh;
+  text-align: center;
+
+  background-color: rgb(43, 124, 129);
+  color: rgb(55, 210, 112);
+  text-align: center;
+}
+
+.front-text h3 {
+  width: 100%;
+  background-color: rgb(43, 124, 129);
+  font-size: 60px;
+  color: rgb(238, 215, 173);
+  text-align: center;
+}
+
+.front-text p {
+  width: 100%;
+  background-color: rgb(43, 124, 129);
+  font-size: 30px;
+  color: rgb(193, 176, 20);
+  margin-top: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+/* FRONT-SIDE */
+.front-side{
+  /* border: 1px solid red; */
+}
+
+/* ICONS */
+.social-media {
+  width: 100%;
+  justify-content: center;
+  padding-left: 50px;
+  display: flex;
+  gap: 70px;
+  font-size: 30px;
+}
+
+.social-icons {
+  transform: scale(1.8);
+}
+
+.social-icons:hover {
+  transform: scale(2.8);
+  transition: 1s;
+  color: blue;
+}
