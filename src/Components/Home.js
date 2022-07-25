@@ -1,22 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Css/HomeStyle.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 
 function Home() {
-      document.addEventListener('DOMContentLoaded', function(event){
-        const text = document.querySelector(".outer-text p");
-        text.innerHTML = text.innerText
-          .split("")
-          .map(
-            (char, i) =>
-              `<span style="transform:rotate(${i * 7.5}deg)">${char}</span>`
-          )
-          .join("");
-      })
-        
-      
+  // Circle text animation START
+  useEffect(() => {
+    const text = document.querySelector(".outer-text p");
+    text.innerHTML = text.innerText
+      .split("")
+      .map(
+        (char, i) =>
+          `<span style="transform:rotate(${i * 7.5}deg)">${char}</span>`
+      )
+      .join("");
+  });
+  // Circle text animation END
   return (
     <div className="body-class">
       <div className="container-front row mt-0 m-0 p-0">
