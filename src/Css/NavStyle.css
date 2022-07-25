@@ -1,5 +1,6 @@
 header {
   /* background-color: rgb(7, 7, 7); */
+    background-color: rgb(21, 141, 71);
   height: 50px;
 }
 .container-nav {
@@ -12,15 +13,19 @@ header {
 .nav-items {
   list-style: none;
   text-decoration: none;
-  color: rgb(109, 165, 183);
+  color: rgb(249, 252, 253);
   font-weight: 600;
   font-size: 25px;
   font-family: "Poppins", sans-serif;
 }
+/* .nav-items:hover{
+  font-size: 27 px;
+  transition: 1s;
+} */
 .nav-items-right {
   list-style: none;
   text-decoration: none;
-  color: rgb(199, 204, 214);
+  color: rgb(242, 247, 243);
   font-weight: 600;
   font-size: 25px;
   font-family: "Poppins", sans-serif;
