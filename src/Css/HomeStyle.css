@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+NSW+ACT+Foundation:wght@500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+NSW+ACT+Foundation:wght@500&display=swap");
 /* WALLPAPER FOR ALL PAGES SLUT*/
 .body-class {
-  
   background-image: url(/src/Images/stillBackground.jpg);
   background-color: white;
   background-repeat: no-repeat;
@@ -11,8 +9,15 @@
   padding: 0;
   margin: 0;
   /* height: 91.6vh; */
-  height: -webkit-calc(100vh - 50px);
+  height: -webkit-calc(100vh);
+}
 
+.hide {
+  display: none;
+}
+
+#shape {
+  z-index: 0;
 }
 
 /* .logo{
@@ -30,140 +35,181 @@ font-size: 47px;
 font-weight: 500;
 } */
 .front-text {
-  margin-left: 5px!important;
   font-family: 'Staatliches', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.container-front{
-  
-}
-
+/* FIRST HEADER */
 .front-text h2 {
   width: 80%;
   font-size: 3vh;
   text-align: center;
   /* background-color: rgb(43, 124, 129); */
-  background-color: rgb(21, 141, 71);
+  background-color: #158d47;
   /* color: rgb(23, 25, 24); */
-  color: rgb(248, 252, 249);
+  color: #f8fcf9;
   text-align: center;
   border-radius: 10px;
 }
 
+/* SECONED HEADER */
 .front-text h3 {
   width: 80%;
-background-color: rgb(21, 141, 71);
+  background-color: #158d47;
   /* background-color: rgb(43, 124, 129); */
   font-size: 60px;
   /* color: rgb(238, 215, 173); */
-    color: rgb(252, 252, 248);
+  color: #fcfcf8;
   text-align: center;
   border-radius: 10px;
 }
 
+/* THIRD HEADER */
 .front-text p {
-  width: 100%;
+  width: 80%;
   /* background-color: rgb(43, 124, 129); */
-  background-color: rgb(21, 141, 71);
-  font-size: 40px;
-  color: rgb(252, 252, 248);
+  background-color: #158d47;
+  font-size: 30px;
+  color: #fcfcf8;
   /* color: rgb(193, 176, 20); */
   margin-top: 40px;
   border-radius: 10px;
   text-align: center;
 }
+
 /* FRONT-SIDE */
-.front-side{
+.front-side {
   /* border: 1px solid red; */
 }
 
 /* ICONS */
 .social-media {
   width: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 70px;
   font-size: 30px;
 }
 
 .social-icons {
-  transform: scale(1.8);
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
 }
 
 .social-icons:hover {
-  transform: scale(2.8);
+  -webkit-transform: scale(2.8);
+          transform: scale(2.8);
+  -webkit-transition: 1s;
   transition: 1s;
   color: blue;
 }
+
 /* SVG Shape */
 .custom-shape-divider-top-1658751484 {
   position: relative;
-  padding: 0!important;
+  padding: 0 !important;
   top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
 }
-.custom-shape-divider-top-1658751484 .shape-fill{
+
+.custom-shape-divider-top-1658751484 .shape-fill {
   padding: 0;
-  fill:rgb(21, 141, 71);
+  fill: #158d47;
 }
-.custom-shape-divider-top-1658751484 svg{
-  display:block;
+
+.custom-shape-divider-top-1658751484 svg {
+  display: block;
   width: calc(131% + 1.3px);
   height: 180px;
 }
 
-.front-side{
-  display:flex;
-  justify-content: center;
-  align-items: center;
+.front-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100%;
   font-family: 'Staatliches', cursive;
 }
 
-.circle{
+.circle {
   position: relative;
   width: 400px;
-  height:400px;
+  height: 400px;
   border-radius: 50%;
   background: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(21, 141, 71);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #158d47;
 }
 
-.outer-text{
+.outer-text {
   position: absolute;
-  width:100%;
-  height:100%;
-  animation:rotateText 10s linear infinite;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: rotateText 10s linear infinite;
+          animation: rotateText 10s linear infinite;
 }
-@keyframes rotateText{
-  0%
-  {
-    transform: rotate(360deg);;
+
+@-webkit-keyframes rotateText {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
-  100%
-  {
-    transform: rotate(0deg);
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
-.inner-text{
+@keyframes rotateText {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+.inner-text {
   font-size: 2.2em;
   color: white;
   font-family: 'Bebas Neue', cursive;
 }
-.outer-text span{
+
+.outer-text span {
   position: absolute;
   left: 50%;
   color: white;
   font-size: 2.2em;
-  transform-origin: 0 200px;
+  -webkit-transform-origin: 0 200px;
+          transform-origin: 0 200px;
 }
+/*# sourceMappingURL=HomeStyle.css.map */

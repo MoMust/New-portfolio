@@ -44,7 +44,7 @@ function MyWork() {
         }
 
     return (
-      <div className="body-class-dark">
+      <div className="body-class-dark" id="myWork">
         <div className="container container-mywork mt-0 pt-5">
           <div className="row row-custom-mywork">
             <div className="header-mywork mt-5 col-lg-12">

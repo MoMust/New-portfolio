@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../Css/HomeStyle.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
+// import ScriptTag from "./NavScroll";
 
 function Home() {
   // Circle text animation START
@@ -16,16 +16,17 @@ function Home() {
       )
       .join("");
   });
+
   // Circle text animation END
   return (
-    <div className="body-class">
+    <div className="body-class" id="home">
       <div className="container-front row mt-0 m-0 p-0">
         {/* Shape */}
-        <div className="custom-shape-divider-top-1658751484">
+        <div className="custom-shape-divider-top-1658751484" id="shape">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
+            viewBox="15 0 1150 70"
             preserveAspectRatio="none"
           >
             <path
@@ -69,11 +70,11 @@ function Home() {
         <div className="front-side col-lg-5 mt-5">
           <div className="circle">
             <div className="inner-text">
-              <p>Knowledge is power</p>
+              <p>Development</p>
             </div>
 
             <div className="outer-text">
-              <p> JS - React - React Native - REST - HTML - CSS </p>
+              <p> JS - React - Fetch - SASS - HTML - CSS </p>
             </div>
           </div>
         </div>

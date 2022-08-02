@@ -27,7 +27,7 @@ function About() {
   }
 
   return (
-    <div className="body-class-dark">
+    <div className="body-class-dark" id="about">
       {/* PROFILE CARD */}
       <div className="row row-custom d-flex justify-content-center pt-5 ">
         <div className="profile-card col-lg-3 col-md-5 col-sm-8 col-8">
