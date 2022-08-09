@@ -1,5 +1,5 @@
 import "../Css/Fonts.css";
-import React from "react";
+import {React, useEffect} from "react";
 import { Link } from "react-scroll";
 // import {NavLink} from 'react-router-dom';
 import "../Css/NavStyle.css";
@@ -7,8 +7,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import ScriptTag from "./NavScroll";
 
 document.addEventListener("DOMContentLoaded", function () {
+
+
   var navbar = document.getElementById("headerScroll");
   var sticky = navbar.offsetTop;
+
 
   function myFunction() {
     if (window.pageYOffset >= sticky) {
@@ -24,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function Nav() {
+
   return (
     <header id="headerScroll">
       
