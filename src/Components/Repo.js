@@ -6,15 +6,14 @@ import SearchResult from './RepoResult';
 function SearchBar() {
 
     
-    const [searchValue, setSearchValue ] = useState('')
+    // const [searchValue, setSearchValue ] = useState('')
     const [repos, setRepos] = useState([]);
 
-    const handleChange = (e) => {
-        setSearchValue(e.target.value);
-    }
+    // const handleChange = (e) => {
+    //     setSearchValue(e.target.value);
+    // }
 
     const handleClick = async () =>{
-        console.log(searchValue);
 
           try{
             const result = await axios(

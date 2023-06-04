@@ -40,7 +40,7 @@
 
 .profile-image img{
     filter: grayscale(20%) contrast(140%) brightness(95%);
-    border-radius: 50%;
+    border-radius: 10%;
     width: 14vw;
     height: 13vw;
     margin-top: 50px;

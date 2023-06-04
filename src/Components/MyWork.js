@@ -6,7 +6,7 @@ import doc2 from '../Images/doc2.png'
 import lakarProject from '../Images/lakarDatabas.png';
 import sportSkor from '../Images/sportSkor.png';
 import SearchBar from './Repo';
-import Projects from './Projects';
+// import Projects from './Projects';
 
 function MyWork() {
 
@@ -69,10 +69,20 @@ function MyWork() {
                 onClick={() => setBigImage1((MakebigImage) => !MakebigImage)}
               >
                 <div className="content-work-img col-lg-6">
-                  <img style={part1SizeImage1} id="img1" src={doc1}></img>
+                  <img
+                    style={part1SizeImage1}
+                    id="img1"
+                    src={doc1}
+                    alt=""
+                  ></img>
                 </div>
                 <div className="content-work-img col-lg-6">
-                  <img style={part1SizeImage2} id="img1" src={doc2}></img>
+                  <img
+                    style={part1SizeImage2}
+                    id="img1"
+                    src={doc2}
+                    alt=""
+                  ></img>
                 </div>
               </div>
             </div>
@@ -95,10 +105,16 @@ function MyWork() {
                     style={part2SizeImage1}
                     id="img1"
                     src={lakarProject}
+                    alt=""
                   ></img>
                 </div>
                 <div className="content-work-img col-lg-6">
-                  <img style={part2SizeImage2} id="img1" src={sportSkor}></img>
+                  <img
+                    style={part2SizeImage2}
+                    id="img1"
+                    src={sportSkor}
+                    alt=""
+                  ></img>
                 </div>
               </div>
             </div>
@@ -113,12 +129,13 @@ function MyWork() {
               <div className="content-header-cv">
                 <h1>Check out my CV</h1>
               </div>
-              <div className="content-cv">
+              {/* <div className="content-cv">
                 <iframe
                   src="https://drive.google.com/file/d/1Pczho48GStbiEXElM1HwFDFwLrONfvlq/preview"
                   allow="autoplay"
+                  title='iframe'
                 ></iframe>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
