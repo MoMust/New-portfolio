@@ -1,5 +1,5 @@
 import "../Css/Fonts.css";
-import {React, useEffect} from "react";
+import {React} from "react";
 import { Link } from "react-scroll";
 // import {NavLink} from 'react-router-dom';
 import "../Css/NavStyle.css";

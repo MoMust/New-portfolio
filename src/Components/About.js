@@ -1,18 +1,18 @@
 import React from "react";
 import "../Css/About.css";
-import Pic from "../Images/profile-pic.png";
+import Pic from "../Images/pro.png";
 // import ReturnHome from './ReturnHomeButton';
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import SchoolIcon from "@mui/icons-material/School";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
-import JavascriptIcon from "@mui/icons-material/Javascript";
-import HtmlIcon from "@mui/icons-material/Html";
-import CssIcon from "@mui/icons-material/Css";
+// import JavascriptIcon from "@mui/icons-material/Javascript";
+// import HtmlIcon from "@mui/icons-material/Html";
+// import CssIcon from "@mui/icons-material/Css";
 import CodeIcon from "@mui/icons-material/Code";
 import CropDinIcon from "@mui/icons-material/CropDin";
-import { FaReact, FaBootstrap} from "react-icons/fa";
+// import { FaReact, FaBootstrap} from "react-icons/fa";
 
 import Box from './Box'
 
@@ -34,7 +34,7 @@ function About() {
           <div className="profile-info-container">
             <div className="profile-bg">
               <div className="profile-image">
-                <img src={Pic}></img>
+                <img src={Pic} alt=""></img>
               </div>
             </div>
             <div className="profile-card-text">
@@ -78,7 +78,7 @@ function About() {
             <div className="send-mail">
               <a
                 href="mailto:mohammed.mustafamoh@learnet.se"
-                class="mail d-flex justify-content-center"
+                className="mail d-flex justify-content-center"
               >
                 <button type="button" className="btn-primary">
                   Email me

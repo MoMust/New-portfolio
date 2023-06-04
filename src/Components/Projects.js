@@ -21,10 +21,10 @@ function Projects(
           onClick={() => setBigImage1((MakebigImage) => !MakebigImage)}
         >
           <div className="content-work-img col-lg-6">
-            <img style={part1SizeImage1} id="img1" src={doc1}></img>
+            <img style={part1SizeImage1} id="img1" src={doc1} alt=""></img>
           </div>
           <div className="content-work-img col-lg-6">
-            <img style={part1SizeImage2} id="img1" src={doc2}></img>
+            <img style={part1SizeImage2} id="img1" src={doc2} alt=""></img>
           </div>
         </div>
       </div>

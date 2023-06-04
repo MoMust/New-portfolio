@@ -2,20 +2,25 @@ import React, { useEffect } from "react";
 import "../Css/HomeStyle.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+import ConstructionIcon from "@mui/icons-material/Construction";
+import DeveloperBoardIcon from "@mui/icons-material/DeveloperBoard";
+import PsychologyIcon from "@mui/icons-material/Psychology";
+import Skill from "./Skills/Skills";
 // import ScriptTag from "./NavScroll";
 
 function Home() {
   // Circle text animation START
-  useEffect(() => {
-    const text = document.querySelector(".outer-text p");
-    text.innerHTML = text.innerText
-      .split("")
-      .map(
-        (char, i) =>
-          `<span style="transform:rotate(${i * 7.5}deg)">${char}</span>`
-      )
-      .join("");
-  });
+  // useEffect(() => {
+  //   const text = document.querySelector(".outer-text p");
+  //   text.innerHTML = text.innerText
+  //     .split("")
+  //     .map(
+  //       (char, i) =>
+  //         `<span style="transform:rotate(${i * 7.5}deg)">${char}</span>`
+  //     )
+  //     .join("");
+  // });
 
   // Circle text animation END
   return (
@@ -41,10 +46,18 @@ function Home() {
         <div className="front-text row col-lg-7 mt-5">
           <h2>Hi, i'm Mohammed</h2>
           <h3>Welcome to my portfolio</h3>
-          <p>
-            I'm a student of front end development, looking
-            <br />
-            to learn it all.
+          <div className="d-flex justify-content-start"></div>
+          <p className="">
+            I'm a newly minted Front-End Developer, equipped with the latest
+            knowledge and passion for transforming concepts into reality. Though
+            my main toolkit involves the power and flexibility of the React
+            framework, I pride myself on my ability to learn and adapt to new
+            technologies and tools to build innovative and user-friendly digital
+            experiences. Having just completed my degree, I bring a fresh
+            perspective to front-end development, blending traditional
+            principles with modern design sensibilities. Feel free to explore my
+            portfolio to see the projects I've worked on and what I could bring
+            to your team.
           </p>
           <div className="social-media">
             <div className="soc-1">
@@ -67,16 +80,65 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="front-side col-lg-5 mt-5">
-          <div className="circle">
+        <div className="row front-side col-lg-5 ">
+          <Skill
+            icon={
+              <DeveloperBoardIcon style={{ width: "50px", height: "50px" }} />
+            }
+            title={"DEVELOPMENT"}
+            list={[
+              "HTML",
+              "CSS",
+              "SASS",
+              "JavaScript",
+              "React",
+              "React.Native",
+              "Redux",
+              "Wordpress",
+              "Node.JS",
+              "MySQL",
+              "Strapi"
+            ]}
+          />
+          <Skill
+            icon={
+              <ConstructionIcon style={{ width: "50px", height: "50px" }} />
+            }
+            title={"TOOLS"}
+            list={[
+              "VSC",
+              "IntelliJ",
+              "Figma",
+              "Git - Github",
+              "NPM",
+              "Postman",
+              "Shortcut",
+              "Slack"
+            ]}
+          />
+          <Skill
+            icon={<PsychologyIcon style={{ width: "50px", height: "50px" }} />}
+            title={"KNOWLEDGE"}
+            list={[
+              "SEO",
+              "UX",
+              "ECMAScript 6",
+              "MVC",
+              "DevOps"
+            ]}
+          />
+          {/* <div className="circle w-90 ">
             <div className="inner-text">
-              <p>Development</p>
+              <p>Knowledge</p>
             </div>
 
             <div className="outer-text">
-              <p> JS - React - Fetch - SASS - HTML - CSS </p>
+              <p>
+                
+                JS - React - React Native - API - SASS - HTML - CSS
+              </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
