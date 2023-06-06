@@ -3,12 +3,12 @@ import Home from './Components/Home';
 import About from './Components/About';
 import MyWork from './Components/MyWork';
 import Contact from './Components/Contact';
-import Nav from '../src/Components/Nav'
+// import Nav from '../src/Components/Nav';
 
 function App() {
   return (
     <>
-    <Nav />
+    {/* <Nav /> */}
     <Home />
     <About/>
     <MyWork/>
