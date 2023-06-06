@@ -1,5 +1,5 @@
 import React from 'react'
-import './Skills.css'
+import '../Css/Skills.css'
 const Skills = (props) => {
   return (
     <div className="category col-4 text-center">
