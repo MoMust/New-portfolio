@@ -6,6 +6,7 @@ import doc2 from '../Images/doc2.png'
 import lakarProject from '../Images/lakarDatabas.png';
 import sportSkor from '../Images/sportSkor.png';
 import SearchBar from './Repo';
+import ImgModal from './ImageModal';
 // import Projects from './Projects';
 
 function MyWork() {
@@ -57,7 +58,8 @@ function MyWork() {
             </div>
           </div>
           {/* Part 1 */}
-          <div className="row row-custom-mywork">
+          <ImgModal img={doc1} title="Project DOC" />
+          {/* <div className="row row-custom-mywork">
             <div className="content-mywork col-lg-12">
               <div className="project-names">
                 <h3>Project DOC</h3>
@@ -86,7 +88,7 @@ function MyWork() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* Part 2 */}
           <div className="row row-custom-mywork">
             <div className="content-mywork col-lg-12">

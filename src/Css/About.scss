@@ -1,33 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+$base-green: rgb(21, 141, 71);
+$background: rgb(42, 52, 117);
+$background-dark: #212529;
+$cloud: rgb(78, 156, 115);
+$line: #2a6574;
+
 /* Full page */
 .line-smal {
   width: 10%;
   height: 3px;
-  background-color: #2a6574;
+  background-color: $line;
 }
-
 .line-big {
   width: 70%;
   height: 3px;
-  background-color: #2a6574;
+  background-color: $line;
+  // margin-top: 50px;
   margin-bottom: 200px;
 }
-
 .body-class-about {
   position: relative;
-  background-color: rgb(42, 52, 117);
+  background-color: $background;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  height: -moz-fit-content;
   height: fit-content;
   font-family: "Secular One", sans-serif;
   padding-top: 150px;
   min-height: 100vh;
   max-height: 4000%;
-  /* SVG Shape CLOSED*/
-}
 
+  /* SVG Shape CLOSED*/
+  // .custom-shape-divider-top-16587514844{
+  //    display: flex;
+  //    justify-content: center;
+  // }
+
+  // .custom-shape-divider-top-16587514844 svg{
+  //     position: absolute;
+  //     width:500px;
+  //     height: 500px;
+  //     left: 70px;
+  // }
+}
 /* Full page slut*/
 .row-custom {
   display: flex;
@@ -45,11 +61,10 @@
   text-align: center;
   flex-direction: column;
 }
-
 .profile-text-container {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #212529;
+  background-color: $background-dark;
   border-radius: 10px;
 }
 
@@ -68,6 +83,7 @@
     margin-top: 50px;
   }
 }
+
 .title-color {
   color: rgb(0, 255, 132);
 }
@@ -82,7 +98,6 @@
 .social-icons {
   transform: scale(1);
 }
-
 .profile-info {
   margin-top: 1rem;
 }
@@ -91,7 +106,7 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  color: rgb(78, 156, 115);
+  color: $cloud;
   font-weight: 600;
 }
 
@@ -103,15 +118,17 @@
   border-radius: 5px;
   border: none;
 }
-
 .send-mail button:hover {
   background-color: blue;
   transition: 1s;
 }
-
 /* Profile card slut*/
+
 /* ABOUT */
+
 .about-info {
+  // border: 1px solid red;
+  // border: 1px solid;
   border-radius: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -119,20 +136,21 @@
 
 @media screen and (max-width: 768px) {
   .about-info {
-    padding-left: 30px;
-  }
+  padding-left: 30px;
 }
+}
+
 .about-info-top > h3,
 h2 {
-  color: rgb(78, 156, 115);
+  color: $cloud;
 }
 
 .about-info-bottom {
   color: rgb(34, 149, 47);
+  // margin-top: 10%;
 }
-
 .about-info-bottom p {
-  color: rgb(78, 156, 115);
+  color: $cloud;
   font-size: 20px;
 }
 
@@ -149,7 +167,6 @@ h2 {
 .box-content-fa {
   display: flex;
 }
-
 .language-icon {
   transform: scale(1.8);
 }
@@ -175,5 +192,4 @@ h2 {
 .box-header-icon {
   transform: scale(1.8);
 }
-
-/* ABOUT slut*//*# sourceMappingURL=About.css.map */
+/* ABOUT slut*/

@@ -5,7 +5,8 @@
 
 $base-green: rgb(21, 141, 71);
 $background: rgb(42, 52, 117);
-$cloud: rgb(98, 152, 124);
+$cloud: rgb(78, 156, 115);
+$strong-cloud: rgb(75, 200, 134);
 
 /* WALLPAPER FOR ALL PAGES SLUT*/
 .body-class {
@@ -14,8 +15,9 @@ $cloud: rgb(98, 152, 124);
     background-size: cover;
     padding: 0;
     margin: 0;
+    font-family: 'Secular One', sans-serif;
     /* height: 91.6vh; */
-    
+    min-height: 100vh;
     max-height: 4000px;
 }
 
@@ -43,7 +45,7 @@ font-weight: 500;
 } */
 .front-text {
 
-    font-family: 'Secular One', sans-serif;
+    
     display: flex;
     justify-content: center;
 }
@@ -70,7 +72,7 @@ font-weight: 500;
     /* background-color: rgb(43, 124, 129); */
     font-size: 50px;
     /* color: rgb(238, 215, 173); */
-    color: $cloud;
+    color: $strong-cloud;
     text-align: center;
     border-radius: 10px;
 }
@@ -94,7 +96,7 @@ font-weight: 500;
     justify-content: center;
     padding-left: 50px;
     display: flex;
-    gap: 70px;
+    gap: 50px;
     font-size: 30px;
 }
 
@@ -121,7 +123,7 @@ font-weight: 500;
 
 .custom-shape-divider-top-1658751484 .shape-fill {
     padding: 0;
-    fill: rgb(98, 152, 124);
+    fill: $strong-cloud;
 }
 
 .custom-shape-divider-top-1658751484 svg {
@@ -135,18 +137,16 @@ font-weight: 500;
 .front-side {
     display: flex;
     justify-content: center;
-    
     min-height: 100%;
     font-family: 'Secular One', sans-serif;
-    // background-color: $cloud;
     border-radius: 10px;
    
-    // p, h3{
-    //     font-size: 25px;
-    //     color: $cloud;
-    // }
 }
-
+@media screen and (max-width: 991px) {
+    .front-side {
+    margin-top: 20px;
+}
+}
 // .circle {
 //     position: relative;
 //     width: 400px;
@@ -157,35 +157,35 @@ font-weight: 500;
 //     align-items: center;
 // }
 
-.outer-text {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    animation: rotateText 10s linear infinite;
-}
+// .outer-text {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     animation: rotateText 10s linear infinite;
+// }
 
-@keyframes rotateText {
-    0% {
-        transform: rotate(360deg);
-        ;
-    }
+// @keyframes rotateText {
+//     0% {
+//         transform: rotate(360deg);
+//         ;
+//     }
 
-    100% {
-        transform: rotate(0deg);
-    }
-}
+//     100% {
+//         transform: rotate(0deg);
+//     }
+// }
 
-.inner-text {
-    font-size: 2.2em;
-    color: $cloud;
-    font-family: 'Bebas Neue', cursive;
-}
+// .inner-text {
+//     font-size: 2.2em;
+//     color: $cloud;
+//     font-family: 'Bebas Neue', cursive;
+// }
 
-.outer-text span {
+// .outer-text span {
 
-    position: absolute;
-    left: 50%;
-    color: $cloud;
-    font-size: 2.2em;
-    transform-origin: 0 200px;
-}
+//     position: absolute;
+//     left: 50%;
+//     color: $cloud;
+//     font-size: 2.2em;
+//     transform-origin: 0 200px;
+// }
