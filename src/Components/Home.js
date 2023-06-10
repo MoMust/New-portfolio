@@ -26,7 +26,7 @@ function Home() {
   return (
     <div className="body-class" id="home">
       <div className="container-front row mt-0 m-0 p-0">
-        {/* Shape */}
+        {/*Wave Shape */}
         <div className="custom-shape-divider-top-1658751484" id="shape">
           <svg
             data-name="Layer 1"
@@ -40,9 +40,6 @@ function Home() {
             ></path>
           </svg>
         </div>
-        {/* <div className="logo">
-            <h2>My Portfolio</h2>
-          </div> */}
         <div className="front-text row col-lg-7 mt-5">
           <h2>Hi, i'm Mohammed</h2>
           <h3>Welcome to my portfolio</h3>
@@ -80,7 +77,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="row front-side col-lg-5 ">
+        <div className="row front-side col-lg-5 pt-md-5">
           <Skill
             icon={
               <DeveloperBoardIcon style={{ width: "50px", height: "50px" }} />

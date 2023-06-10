@@ -45,22 +45,22 @@ function ContactForm() {
                 
             </form>
 
-            <div class="modal" id="myModal">
-                <div class="modal-dialog ">
-                    <div class="modal-content">
+            <div className="modal" id="myModal">
+                <div className="modal-dialog ">
+                    <div className="modal-content">
 
                     
-                    <div class="modal-header">
+                    <div className="modal-header">
                         
                     </div>
 
-                    <div class="modal-body">
+                    <div className="modal-body">
                         <p> Your message has been sent!<br/>
                         I'll be in touch as soon as possible.</p>
                     </div>
 
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <div className="modal-footer">
+                        <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Close</button>
                     </div>
 
                     </div>
