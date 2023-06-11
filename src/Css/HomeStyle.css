@@ -23,20 +23,6 @@
   z-index: 0;
 }
 
-/* .logo{
-  font-family: 'Staatliches', cursive;
-  height:70px;
-  display:flex;
-  justify-content: center;
-
-  padding-top: 20px;
-  padding-bottom: 0;
-  margin-bottom: 7.5em;
-} */
-/* .logo>h2{
-font-size: 47px;
-font-weight: 500;
-} */
 .front-text {
   display: flex;
   justify-content: center;
@@ -47,8 +33,7 @@ font-weight: 500;
   width: 80%;
   font-size: 3vh;
   text-align: center;
-  /* background-color: rgb(43, 124, 129); */
-  /* color: rgb(23, 25, 24); */
+
   color: rgb(78, 156, 115);
   text-align: center;
   border-radius: 10px;
@@ -57,9 +42,7 @@ font-weight: 500;
 /* SECONED HEADER */
 .front-text h3 {
   width: 80%;
-  /* background-color: rgb(43, 124, 129); */
   font-size: 50px;
-  /* color: rgb(238, 215, 173); */
   color: rgb(75, 200, 134);
   text-align: center;
   border-radius: 10px;
@@ -68,10 +51,8 @@ font-weight: 500;
 /* THIRD HEADER */
 .front-text p {
   width: 80%;
-  /* background-color: rgb(43, 124, 129); */
   font-size: 20px;
   color: rgb(78, 156, 115);
-  /* color: rgb(193, 176, 20); */
   margin-top: 40px;
   border-radius: 10px;
   text-align: center;

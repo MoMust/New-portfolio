@@ -25,7 +25,8 @@ function Home() {
   // Circle text animation END
   return (
     <div className="body-class" id="home">
-      <div className="container-front row mt-0 m-0 p-0">
+      <div className="container-front row d-flex justify-content-center mt-0 m-0 p-0 gap-4">
+
         {/*Wave Shape */}
         <div className="custom-shape-divider-top-1658751484" id="shape">
           <svg
@@ -77,7 +78,8 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="row front-side col-lg-5 pt-md-5">
+        <div className="row front-side col-lg-5 pt-md-5 px-4">
+
           <Skill
             icon={
               <DeveloperBoardIcon style={{ width: "50px", height: "50px" }} />
@@ -94,7 +96,7 @@ function Home() {
               "Wordpress",
               "Node.JS",
               "MySQL",
-              "Strapi"
+              "Strapi",
             ]}
           />
           <Skill
@@ -110,19 +112,13 @@ function Home() {
               "NPM",
               "Postman",
               "Shortcut",
-              "Slack"
+              "Slack",
             ]}
           />
           <Skill
             icon={<PsychologyIcon style={{ width: "50px", height: "50px" }} />}
             title={"KNOWLEDGE"}
-            list={[
-              "SEO",
-              "UX",
-              "ECMAScript 6",
-              "MVC",
-              "DevOps"
-            ]}
+            list={["SEO", "UX", "ECMAScript 6", "MVC", "DevOps"]}
           />
           {/* <div className="circle w-90 ">
             <div className="inner-text">

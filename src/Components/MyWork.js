@@ -11,116 +11,43 @@ import ImgModal from './ImageModal';
 
 function MyWork() {
 
-    const [makeBigImage, setBigImage1] = useState(false)
-    const [makeBigImage2, setBigImage2] = useState(false)
+  const [imageModal, setImageModal] = useState('');
 
-        // Part 1
-        const part1SizeImage1 = {
-           height: makeBigImage ? '43vh' : '30vh',
-           cursor: makeBigImage ? 'zoom-out' : 'zoom-in',
-        //    marginRight: makeBigImage ? '50px' : '0px,'
-        }
-        const part1SizeImage2 = {
-           height: makeBigImage ? '43vh' : '30vh',
-           cursor: makeBigImage ? 'zoom-out' : 'zoom-in',
-        //    marginLeft: makeBigImage ? '100px' : '0px,'
-        }
-        const makeCursor = {
-           cursor: makeBigImage ? 'zoom-out' : 'zoom-in',
-        }
 
-        // Part2
-        const part2SizeImage1 = {
-           height: makeBigImage2 ? '43vh' : '30vh',
-           cursor: makeBigImage2 ? 'zoom-out' : 'zoom-in',
-        //    marginRight: makeBigImage ? '50px' : '0px,'
-        }
-        const part2SizeImage2 = {
-           height: makeBigImage2 ? '43vh' : '30vh',
-           cursor: makeBigImage2 ? 'zoom-out' : 'zoom-in',
-        //    marginLeft: makeBigImage ? '100px' : '0px,'
-        }
-        const makeCursor2 = {
-           cursor: makeBigImage2 ? 'zoom-out' : 'zoom-in',
-        }
+  console.log(imageModal)
 
     return (
       <div className="body-class-dark" id="myWork">
-        <div className="container container-mywork mt-0 pt-5">
-          <div className="row row-custom-mywork">
-            <div className="header-mywork mt-5 col-lg-12">
-              <h1>These are my projects</h1>
-              <div>
-                <h3>
+        <div className="container-mywork mt-0">
+          <div className="row-custom-mywork">
+            <div className="px-3 header-mywork mt-5 ">
+              <h1 className=''>My projects</h1>
+              <div className='line-smal'></div>
+              <div className='pt-3'>
+                <p>
                   Through my school time i've managed to work on a few things.
-                </h3>
+                </p>
               </div>
             </div>
           </div>
           {/* Part 1 */}
-          <ImgModal img={doc1} title="Project DOC" />
-          {/* <div className="row row-custom-mywork">
-            <div className="content-mywork col-lg-12">
-              <div className="project-names">
-                <h3>Project DOC</h3>
-              </div>
 
-              <div
-                style={makeCursor2}
-                className="row row-work-images mt-5"
-                onClick={() => setBigImage1((MakebigImage) => !MakebigImage)}
-              >
-                <div className="content-work-img col-lg-6">
-                  <img
-                    style={part1SizeImage1}
-                    id="img1"
-                    src={doc1}
-                    alt=""
-                  ></img>
-                </div>
-                <div className="content-work-img col-lg-6">
-                  <img
-                    style={part1SizeImage2}
-                    id="img1"
-                    src={doc2}
-                    alt=""
-                  ></img>
-                </div>
-              </div>
-            </div>
-          </div> */}
+          <ImgModal
+            img1={doc1}
+            img2={doc2}
+            setImageModal={setImageModal}
+            imageModal={imageModal}
+            title="THE DOCTORS CLOUD"
+          />
+
           {/* Part 2 */}
-          <div className="row row-custom-mywork">
-            <div className="content-mywork col-lg-12">
-              <div className="row project-names">
-                <h3 className="col-lg-6">The docs cloud</h3>
-                <h3 className="col-lg-6">Sport Fashion</h3>
-              </div>
-
-              <div
-                style={makeCursor}
-                className="row row-work-images mt-5"
-                onClick={() => setBigImage2((bigImage) => !bigImage)}
-              >
-                <div className="content-work-img col-lg-6">
-                  <img
-                    style={part2SizeImage1}
-                    id="img1"
-                    src={lakarProject}
-                    alt=""
-                  ></img>
-                </div>
-                <div className="content-work-img col-lg-6">
-                  <img
-                    style={part2SizeImage2}
-                    id="img1"
-                    src={sportSkor}
-                    alt=""
-                  ></img>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ImgModal
+            img1={lakarProject}
+            img2={sportSkor}
+            setImageModal={setImageModal}
+            imageModal={imageModal}
+            title="MediCare & Sport Fashion"
+          />
           <div className="repo">
             <h1>Search in my repository</h1>
             <SearchBar />

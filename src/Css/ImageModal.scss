@@ -1,11 +1,16 @@
-.modal{
 
-    .modal-body{
+$base-green: rgb(21, 141, 71);
+$background: rgb(42, 52, 117);
+$cloud: rgb(78, 156, 115);
+$midnightBlue: #2a6574;
+$black: #212529;
 
-    img{
-        width:100%;
-        height: 100%;
+.modal {
+  .modal-body {
+    img {
+      width: 100%;
+      height: 100%;
     }
-}
+  }
 }
 

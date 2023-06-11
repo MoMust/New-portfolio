@@ -52,63 +52,14 @@ function About() {
             <div className="profile-image">
               <img src={Pic} alt=""></img>
             </div>
-            {/* <div className="profile-text-container mt-3">
-              <div className="profile-card-text">
-                <h5>
-                  Mohammed <span className="title-color">Mustafa</span>
-                </h5>
-              </div>
-              <div className="profile-card-text">
-                <h5>Front-end / Web Developer</h5>
-              </div>
-              <div className="social-media-about">
-                <a href="https://www.facebook.com/profile.php?id=627371126">
-                  <FacebookIcon
-                    className="social-icons"
-                    variant="contained"
-                    color="primary"
-                  />
-                </a>
-                <a href="https://www.linkedin.com/in/moe-mustafa-14918a220/">
-                  <LinkedInIcon
-                    className="social-icons"
-                    variant="contained"
-                    color="primary"
-                  />
-                </a>
-              </div>
-              <div className="profile-info">
-                <div className="profile-info-details">
-                  <SchoolIcon />
-                  <p>KYH Stockholm</p>
-                </div>
-                <div className="profile-info-details">
-                  <LocationOnIcon />
-                  <p>Stockholm, Sweden</p>
-                </div>
-                <div className="profile-info-details">
-                  <CalendarTodayIcon />
-                  <p>Avalible from: {printOutDate()}</p>
-                </div>
-              </div>
-              <div className="send-mail">
-                <a
-                  href="mailto:mohammed.mustafamoh@learnet.se"
-                  className="mail d-flex justify-content-center"
-                >
-                  <button type="button" className="btn-primary">
-                    Email me
-                  </button>
-                </a>
-              </div>
-            </div> */}
           </div>
         </div>
         {/* PROFILE CARD END*/}
         <div className="about-info col-lg-6 col-md-6 mt-5">
           <div className="about-info-top">
-            <h2>About me</h2>
-            <h3>
+            <h1>About me</h1>
+            <div className="line-smal"></div>
+            <h3 className="pt-3">
               I'm a newly minted Front-End Developer, equipped with the latest
               knowledge and passion for transforming concepts into reality.
             </h3>
@@ -133,33 +84,6 @@ function About() {
                 portfolio to discover the projects I've tackled and to get a
                 glimpse of the unique contributions I can bring to your team.
               </p>
-              {/* <div className="row">
-                <Box
-                  icon={<CodeIcon />}
-                  skill1={"HTML"}
-                  skill2={"CSS"}
-                  skill3={"JavaScript"}
-                  header={"Programming languages"}
-                />
-                <Box
-                  icon={<CropDinIcon />}
-                  skill1={"React"}
-                  skill2={"Bootstrap"}
-                  skill3={"React Native"}
-                  header={"Frameworks"}
-                />
-              </div>
-              <div className="row ">
-                <Box
-                  icon={<CodeIcon />}
-                  skill1={"Wordpress"}
-                  skill2={"MVC"}
-                  skill3={"Node.js"}
-                  skill4={"Jest"}
-                  skill5={"Rest"}
-                  header={"Other tools"}
-                />
-              </div> */}
             </div>
           </div>
         </div>

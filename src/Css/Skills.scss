@@ -2,10 +2,11 @@ $base-green: rgb(21, 141, 71);
 $background: rgb(42, 52, 117);
 $cloud: rgb(98, 152, 124);
 $test: #2A6574;
+$black: #212529;
    
    .category{
      .item{
-        background-color: #212529;
+        background-color: $black;
         border-radius: 5px;
         font-size: 17px;
         color: $cloud;
