@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../Css/ImageModal.css'
 const ImageModal = (props) => {
+
   return (
     <>
       <div className="row row-custom-mywork">
@@ -14,12 +15,18 @@ const ImageModal = (props) => {
               className="content-work-img col-lg-6"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
+              onClick={() => props.setImageModal(props.img1)}
             >
-              <img id="img1" src={props.img} alt=""></img>
+              <img id="img1" src={props.img1} alt=""></img>
             </div>
-            {/* <div className="content-work-img col-lg-6">
-              <img id="img1" src={doc2} alt=""></img>
-            </div> */}
+            <div
+              className="content-work-img col-lg-6"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              onClick={() => props.setImageModal(props.img2)}
+            >
+              <img id="img1" src={props.img2} alt=""></img>
+            </div>
           </div>
         </div>
       </div>
@@ -31,34 +38,24 @@ const ImageModal = (props) => {
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div className="modal-lg-centered">
+        <div className="modal-dialog modal-xl">
           <div className="modal-content">
-            <div className="modal-header">
-              
+            <div className="modal-header border-0">
               <button
                 type="button"
-                className="btn-close"
+                className="btn-close btn-close-white"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
-            <div className="modal-body">
-              <img src={props.img}></img>
-            </div>
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
+            <div className="modal-body border-0">
+              <img src={props.imageModal}></img>
             </div>
           </div>
         </div>
       </div>
     </>
   );
-}
+};
 
 export default ImageModal

@@ -25,7 +25,6 @@
   padding-top: 150px;
   min-height: 100vh;
   max-height: 4000%;
-  /* SVG Shape CLOSED*/
 }
 
 /* Full page slut*/
@@ -122,21 +121,22 @@
     padding-left: 30px;
   }
 }
-.about-info-top > h3,
-h2 {
+.about-info-top h3 {
+  color: rgb(78, 156, 115);
+}
+.about-info-top h1 {
   color: rgb(78, 156, 115);
 }
 
 .about-info-bottom {
   color: rgb(34, 149, 47);
 }
-
 .about-info-bottom p {
   color: rgb(78, 156, 115);
   font-size: 20px;
 }
 
-.box-header {
+.about-info-bottom .box-header {
   display: flex;
 }
 

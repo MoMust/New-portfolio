@@ -1,191 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+NSW+ACT+Foundation:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+NSW+ACT+Foundation:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 
 $base-green: rgb(21, 141, 71);
 $background: rgb(42, 52, 117);
-$cloud: rgb(78, 156, 115);
-$strong-cloud: rgb(75, 200, 134);
+$cloud: rgb(98, 152, 124);
+$midnightBlue: #2a6574;
+$black: #212529;
 
 /* WALLPAPER FOR ALL PAGES SLUT*/
 .body-class {
-    background-color: $background;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-    margin: 0;
-    font-family: 'Secular One', sans-serif;
-    /* height: 91.6vh; */
-    min-height: 100vh;
-    max-height: 4000px;
+  background-color: $background;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  font-family: "Secular One", sans-serif;
+  /* height: 91.6vh; */
+  min-height: 100vh;
+  max-height: 4000px;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 #shape {
-    z-index: 0;
+  z-index: 0;
 }
 
-/* .logo{
-  font-family: 'Staatliches', cursive;
-  height:70px;
-  display:flex;
-  justify-content: center;
- 
-  padding-top: 20px;
-  padding-bottom: 0;
-  margin-bottom: 7.5em;
-} */
-/* .logo>h2{
-font-size: 47px;
-font-weight: 500;
-} */
 .front-text {
-
-    
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
-
 
 /* FIRST HEADER */
 .front-text h2 {
-    width: 80%;
-    font-size: 3vh;
-    text-align: center;
-    /* background-color: rgb(43, 124, 129); */
-    
-    /* color: rgb(23, 25, 24); */
-    color: $cloud;
-    text-align: center;
-    border-radius: 10px;
+  width: 80%;
+  font-size: 3vh;
+  text-align: center;
+  color: $cloud;
+  text-align: center;
+  border-radius: 10px;
 }
 
 /* SECONED HEADER */
 .front-text h3 {
-    width: 80%;
-    // background-color: $base-green;
-    /* background-color: rgb(43, 124, 129); */
-    font-size: 50px;
-    /* color: rgb(238, 215, 173); */
-    color: $strong-cloud;
-    text-align: center;
-    border-radius: 10px;
+  width: 80%;
+  font-size: 50px;
+  color: $strong-cloud;
+  text-align: center;
+  border-radius: 10px;
 }
 
 /* THIRD HEADER */
 .front-text p {
-    width: 80%;
-    /* background-color: rgb(43, 124, 129); */
-    // background-color: $base-green;
-    font-size: 20px;
-    color: $cloud;
-    /* color: rgb(193, 176, 20); */
-    margin-top: 40px;
-    border-radius: 10px;
-    text-align: center;
+  width: 80%;
+  font-size: 20px;
+  color: $cloud;
+  margin-top: 40px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 /* ICONS */
 .social-media {
-    width: 100%;
-    justify-content: center;
-    padding-left: 50px;
-    display: flex;
-    gap: 50px;
-    font-size: 30px;
+  width: 100%;
+  justify-content: center;
+  padding-left: 50px;
+  display: flex;
+  gap: 50px;
+  font-size: 30px;
 }
 
 .social-icons {
-    transform: scale(1.8);
+  transform: scale(1.8);
 }
 
 .social-icons:hover {
-    transform: scale(2.8);
-    transition: 1s;
-    color: blue;
+  transform: scale(2.8);
+  transition: 1s;
+  color: blue;
 }
 
 /* SVG Shape */
 .custom-shape-divider-top-1658751484 {
-    position: relative;
-    padding: 0 !important;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: relative;
+  padding: 0 !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .custom-shape-divider-top-1658751484 .shape-fill {
-    padding: 0;
-    fill: $strong-cloud;
+  padding: 0;
+  fill: $strong-cloud;
 }
 
 .custom-shape-divider-top-1658751484 svg {
-    display: block;
-    width: calc(131% + 1.3px);
-    height: 180px;
+  display: block;
+  width: calc(131% + 1.3px);
+  height: 180px;
 }
 
 // FRONT-SIDE
 
 .front-side {
-    display: flex;
-    justify-content: center;
-    min-height: 100%;
-    font-family: 'Secular One', sans-serif;
-    border-radius: 10px;
-   
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  font-family: "Secular One", sans-serif;
+  border-radius: 10px;
 }
 @media screen and (max-width: 991px) {
-    .front-side {
+  .front-side {
     margin-top: 20px;
+  }
 }
-}
-// .circle {
-//     position: relative;
-//     width: 400px;
-//     height: 400px;
-//     border-radius: 50%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-// .outer-text {
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     animation: rotateText 10s linear infinite;
-// }
-
-// @keyframes rotateText {
-//     0% {
-//         transform: rotate(360deg);
-//         ;
-//     }
-
-//     100% {
-//         transform: rotate(0deg);
-//     }
-// }
-
-// .inner-text {
-//     font-size: 2.2em;
-//     color: $cloud;
-//     font-family: 'Bebas Neue', cursive;
-// }
-
-// .outer-text span {
-
-//     position: absolute;
-//     left: 50%;
-//     color: $cloud;
-//     font-size: 2.2em;
-//     transform-origin: 0 200px;
-// }
