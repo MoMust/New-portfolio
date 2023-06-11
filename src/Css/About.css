@@ -121,6 +121,7 @@
     padding-left: 30px;
   }
 }
+
 .about-info-top h3 {
   color: rgb(78, 156, 115);
 }
@@ -136,7 +137,9 @@
   font-size: 20px;
 }
 
+
 .about-info-bottom .box-header {
+
   display: flex;
 }
 

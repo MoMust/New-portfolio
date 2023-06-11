@@ -31,6 +31,7 @@ function MyWork() {
             </div>
           </div>
           {/* Part 1 */}
+
           <ImgModal
             img1={doc1}
             img2={doc2}
@@ -38,6 +39,7 @@ function MyWork() {
             imageModal={imageModal}
             title="THE DOCTORS CLOUD"
           />
+
           {/* Part 2 */}
           <ImgModal
             img1={lakarProject}

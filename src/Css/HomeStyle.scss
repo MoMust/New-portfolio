@@ -5,6 +5,7 @@
 
 $base-green: rgb(21, 141, 71);
 $background: rgb(42, 52, 117);
+
 $cloud: rgb(98, 152, 124);
 $midnightBlue: #2a6574;
 $black: #212529;
@@ -20,6 +21,7 @@ $black: #212529;
   /* height: 91.6vh; */
   min-height: 100vh;
   max-height: 4000px;
+
 }
 
 .hide {
@@ -33,6 +35,7 @@ $black: #212529;
 .front-text {
   display: flex;
   justify-content: center;
+
 }
 
 /* FIRST HEADER */
@@ -47,11 +50,13 @@ $black: #212529;
 
 /* SECONED HEADER */
 .front-text h3 {
+
   width: 80%;
   font-size: 50px;
   color: $strong-cloud;
   text-align: center;
   border-radius: 10px;
+
 }
 
 /* THIRD HEADER */
@@ -66,6 +71,7 @@ $black: #212529;
 
 /* ICONS */
 .social-media {
+
   width: 100%;
   justify-content: center;
   padding-left: 50px;
@@ -96,6 +102,7 @@ $black: #212529;
 }
 
 .custom-shape-divider-top-1658751484 .shape-fill {
+
   padding: 0;
   fill: $strong-cloud;
 }
@@ -109,6 +116,7 @@ $black: #212529;
 // FRONT-SIDE
 
 .front-side {
+
   display: flex;
   justify-content: center;
   min-height: 100%;
@@ -120,3 +128,4 @@ $black: #212529;
     margin-top: 20px;
   }
 }
+

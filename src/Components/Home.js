@@ -26,6 +26,7 @@ function Home() {
   return (
     <div className="body-class" id="home">
       <div className="container-front row d-flex justify-content-center mt-0 m-0 p-0 gap-4">
+
         {/*Wave Shape */}
         <div className="custom-shape-divider-top-1658751484" id="shape">
           <svg
@@ -78,6 +79,7 @@ function Home() {
           </div>
         </div>
         <div className="row front-side col-lg-5 pt-md-5 px-4">
+
           <Skill
             icon={
               <DeveloperBoardIcon style={{ width: "50px", height: "50px" }} />
