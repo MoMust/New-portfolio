@@ -2,11 +2,11 @@ import React, {useState} from 'react'
 import "../Css/errorMessage.css";
 import "../Css/ContactForm.css"
 const Input = (props) => {
-    const [focused, setFocused] = useState(false);
+    // const [focused, setFocused] = useState(false);
 
-    const handleFocus = (e) => {
-      setFocused(true);
-    };
+    // const handleFocus = (e) => {
+    //   setFocused(true);
+    // };
   return (
     <div className="input-container mb-3">
       <div>
@@ -29,8 +29,8 @@ const Input = (props) => {
           }
           required={true}
           pattern={props.pattern}
-          onBlur={handleFocus}
-          focused={focused.toString()}
+          onBlur={props.handleFocus}
+          focused={props.focused}
         ></input>
         <span className="errorMessage pt-3" style={{ fontSize: "13px" }}>
           {props.errorMessage}
