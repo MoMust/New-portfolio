@@ -8,13 +8,15 @@ import Contact from './Components/Contact';
 function App() {
   return (
     <>
-    {/* <Nav /> */}
-    <Home />
-    <About/>
-    <MyWork/>
-    <Contact/>
+      {/* <Nav /> */}
+      <div className='main'>
+        <Home />
+        <About />
+        <MyWork />
+        <Contact />
+      </div>
     </>
-  )
+  );
 }
 
 export default App;
