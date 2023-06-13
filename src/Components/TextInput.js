@@ -2,11 +2,11 @@ import React, {useState} from 'react'
 
 const TextInput = (props) => {
 
-    const [focused, setFocused] = useState(false);
+    // const [focused, setFocused] = useState(false);
 
-     const handleFocus = (e) => {
-       setFocused(true);
-     };
+    //  const handleFocus = (e) => {
+    //    setFocused(true);
+    //  };
 
   return (
     <div className="wrap mb-4">
@@ -33,9 +33,9 @@ const TextInput = (props) => {
             })
           }
           required={true}
-          onBlur={handleFocus}
-          onFocus={() => setFocused(true)}
-          focused={focused.toString()}
+          onBlur={props.handleFocus}
+          onFocus={props.onFocus}
+          focused={props.focused}
           pattern={props.pattern}
         ></textarea>
         <span className="errorMessage" style={{ fontSize: "16px" }}>

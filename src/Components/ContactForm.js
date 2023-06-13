@@ -1,23 +1,54 @@
 import React, { useState } from "react";
 import "../Css/ContactForm.css";
 import "../Css/errorMessage.css";
+import { Modal, Button } from "react-bootstrap";
 import emailjs from "emailjs-com";
 import Input from "./Input";
 import TextInput from "./TextInput";
+import MarkChatReadIcon from "@mui/icons-material/MarkChatRead";
+
+
+
 function ContactForm() {
+  // State of form inputs
   const [toSend, setToSend] = useState({
     from_name: "",
     from_email: "",
     message: "",
   });
-
+  // States of modal successfully sent
+  const [showModal, setShowModal] = useState(false);
+  const [formValid, setFormValid] = useState(true);
+  // State of input focus
   const [focused, setFocused] = useState(false);
-
+   console.log(focused)
   const handleFocus = (e) => {
     setFocused(true);
   };
   const sendEmail = (e) => {
     e.preventDefault();
+
+    if (
+      toSend.from_name === "" ||
+      toSend.from_email === "" ||
+      toSend.message === ""
+    ) {
+      setFormValid(false);
+    } else if (!isValidEmail(toSend.from_email)) {
+      // Check if email is valid
+      setFormValid(true); // Set formValid to true to show the error message
+    } else {
+      setFormValid(true);
+      setShowModal(true);
+    }
+
+    setToSend({
+      from_name: "",
+      from_email: "",
+      message: "",
+    });
+
+    setFocused(false)
 
     emailjs
       .sendForm(
@@ -34,20 +65,19 @@ function ContactForm() {
   };
 
   const handleChange = (e) => {
-    setToSend({ ...toSend, [e.target.name]: e.target.value });
+    setToSend((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
   };
 
-  const modalSend = () => {
-    const x = document.getElementById("myModal");
-    const inputName = document.getElementById("name").value;
-    const inputEmail = document.getElementById("email").value;
-    const inputMessage = document.getElementById("message").value;
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
-    if (inputName === "" || inputEmail === "" || inputMessage === "") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+  const isValidEmail = (email) => {
+    const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+    return emailRegex.test(email);
   };
 
   return (
@@ -65,6 +95,9 @@ function ContactForm() {
             onChange={handleChange}
             setToSend={setToSend}
             toSend={toSend}
+            onBlur={handleFocus}
+            focused={focused.toString()}
+            onFocus={() => setFocused(true)}
             pattern="^[A-Za-z]{1,20}$"
             required
           />
@@ -78,6 +111,9 @@ function ContactForm() {
             onChange={handleChange}
             setToSend={setToSend}
             toSend={toSend}
+            onBlur={handleFocus}
+            focused={focused.toString()}
+            onFocus={() => setFocused(true)}
             pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
             required
           />
@@ -87,6 +123,9 @@ function ContactForm() {
             value={toSend.message}
             label="Ditt meddelande"
             errorMessage="Textfältet kan inte vara tomt"
+            onBlur={handleFocus}
+            onFocus={() => setFocused(true)}
+            focused={focused.toString()}
             onChange={handleChange}
             setToSend={setToSend}
             toSend={toSend}
@@ -107,33 +146,36 @@ function ContactForm() {
           Send
         </button>
       </form>
-
-      <div className="modal" id="sendSuccessModal">
-        <div className="modal-dialog ">
-          <div className="modal-content">
-            <div className="modal-header"></div>
-
-            <div className="modal-body">
-              <p>
-                {" "}
-                Your message has been sent!
-                <br />
-                I'll be in touch as soon as possible.
-              </p>
-            </div>
-
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-danger"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
+      <Modal show={showModal} onHide={handleCloseModal}>
+        <Modal.Body className="mt-3 d-flex flex-column justify-content-center">
+          <div className="text-center">
+            <p style={{ fontWeight: "600" }}>Your message has been sent!</p>
+            <p style={{ fontWeight: "600" }}>
+              I'll be in touch as soon as possible.
+            </p>
+            <MarkChatReadIcon
+              style={{
+                color: "rgb(78, 156, 115)",
+                width: "50px",
+                height: "50px",
+              }}
+            />
           </div>
-        </div>
-      </div>
+        </Modal.Body>
+        <Modal.Footer className="border-0">
+          <Button
+            variant="secondary"
+            style={{
+              backgroundColor: "rgb(58, 67, 125)",
+              border: "none",
+              fontWeight: "500",
+            }}
+            onClick={handleCloseModal}
+          >
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 }
