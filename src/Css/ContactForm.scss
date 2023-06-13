@@ -1,0 +1,109 @@
+$base-green: rgb(21, 141, 71);
+$background: rgb(42, 52, 117);
+$background-dark: #212529;
+$cloud: rgb(78, 156, 115);
+$line: #2a6574;
+.line-smal {
+  width: 10%;
+  height: 3px;
+  background-color: $line;
+}
+.line-big {
+  width: 70%;
+  height: 3px;
+  background-color: $line;
+  // margin-top: 50px;
+  margin-bottom: 200px;
+}
+.body-class-contact-form {
+  background-color: $background;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+   font-family: "Secular One", sans-serif;
+}
+.container {
+  width: 35%;
+  height: 50%;
+  margin-top: 70px;
+} 
+
+/* Form */
+.form-container{
+   h1 {
+  color: $cloud;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+p{
+  color: $cloud;
+} 
+}
+
+
+.form{
+  .input-container{
+     .any{
+      
+     }
+      
+    }
+  textarea, input {
+  width: 450px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: $cloud;
+  border:none;
+  color: white;
+  padding-left: 10px;
+    
+  textarea {
+    height: 100px;
+  }}
+
+  label{
+    color: $cloud;
+  }
+
+}
+
+
+
+
+.submit-button{
+    
+    background-color: rgb(21, 97, 152);
+    color: rgb(198, 191, 191);
+    font-weight: 600;
+    border-radius: 5px;
+    border:none;
+}
+
+.submit-button:hover{
+    background-color: blue;
+    transition: 1s;
+}
+/* Form slut*/
+
+/* Modal */
+
+.modal {
+  margin-top: 50px;
+  
+}
+.modal-content{
+    background-color: rgba(35, 32, 32, 0.952)!important;
+}
+
+.modal-body {
+  font-size: 30px;
+}
+.modal-body p {
+  color: rgb(71, 157, 117);
+}
+
+.modal-backdrop{
+    display:none;
+}

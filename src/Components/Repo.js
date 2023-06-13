@@ -17,7 +17,7 @@ function SearchBar() {
 
           try{
             const result = await axios(
-              `https://api.github.com/users/BigBits8/repos`
+              `https://api.github.com/users/Momust/repos`
             );
             setRepos(result);
             // ${searchValue}

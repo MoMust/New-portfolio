@@ -1,0 +1,24 @@
+$red: rgb(159, 58, 58);
+
+.errorMessage {
+    color: $red;
+    font-size: 12px;
+    display: none;
+    
+}
+
+.inputName:invalid[focused="true"]~.errorMessage {
+    display: block;
+}
+
+.inputName:invalid[focused="true"] {
+    border: 1px solid $red;
+}
+
+.inputEmail:invalid[focused="true"]~.errorMessage {
+    display: block;
+}
+
+.inputEmail:invalid[focused="true"] {
+    border: 1px solid $red;
+}
