@@ -1,18 +1,18 @@
-import React from 'react';
-import Home from './Components/Home';
-import About from './Components/About';
-import MyWork from './Components/MyWork';
-import Contact from './Components/Contact';
+import React from "react";
+import Home from "./Components/Home/Home.jsx";
+import About from "./Components/About/About.jsx";
+import MyProjects from "./Components/MyProjects/MyProjects.jsx";
+import Contact from "./Components/Contact/Contact.jsx";
 // import Nav from '../src/Components/Nav';
 
 function App() {
   return (
     <>
       {/* <Nav /> */}
-      <div className='main'>
+      <div className="main">
         <Home />
         <About />
-        <MyWork />
+        <MyProjects />
         <Contact />
       </div>
     </>

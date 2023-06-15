@@ -1,6 +1,6 @@
 
 import React, {useState} from 'react'
-import '../Css/ImageModal.css'
+import './ImageModal.css'
 const ImageModal = (props) => {
 
 
