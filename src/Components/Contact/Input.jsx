@@ -1,12 +1,8 @@
-import React, {useState} from 'react'
-import "../Css/errorMessage.css";
-import "../Css/ContactForm.css"
+import React from 'react'
+import "./ErrorMessage/errorMessage.css";
+import "./ContactForm/ContactForm.css"
 const Input = (props) => {
-    // const [focused, setFocused] = useState(false);
 
-    // const handleFocus = (e) => {
-    //   setFocused(true);
-    // };
   return (
     <div className="input-container mb-3">
       <div>

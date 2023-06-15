@@ -4,7 +4,7 @@ import { useNavigate} from 'react-router-dom';
 import ReturnHomeButton from '../Components/ReturnHomeButton'
 
 function Error() {
-
+const element = <h1>Hello</h1>;
     const navigate = useNavigate();
     return (
         <div className='body-class-error'>

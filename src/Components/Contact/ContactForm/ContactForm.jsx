@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import "../Css/ContactForm.css";
-import "../Css/errorMessage.css";
+import "./ContactForm.css";
+import "../ErrorMessage/errorMessage.css";
 import { Modal, Button } from "react-bootstrap";
 import emailjs from "emailjs-com";
-import Input from "./Input";
-import TextInput from "./TextInput";
+import Input from "../Input.jsx";
+import TextInput from "../TextInput.jsx";
 import MarkChatReadIcon from "@mui/icons-material/MarkChatRead";
-
-
 
 function ContactForm() {
   // State of form inputs
@@ -21,7 +19,7 @@ function ContactForm() {
   const [formValid, setFormValid] = useState(true);
   // State of input focus
   const [focused, setFocused] = useState(false);
-   console.log(focused)
+  console.log(focused);
   const handleFocus = (e) => {
     setFocused(true);
   };
@@ -48,7 +46,7 @@ function ContactForm() {
       message: "",
     });
 
-    setFocused(false)
+    setFocused(false);
 
     emailjs
       .sendForm(
@@ -117,6 +115,11 @@ function ContactForm() {
             pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
             required
           />
+          {!formValid && toSend.from_email !== "" && (
+            <span className="errorMessage" style={{ fontSize: "16px" }}>
+              Din mail måste vara giltig
+            </span>
+          )}
           <TextInput
             id="message"
             name="message"

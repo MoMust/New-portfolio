@@ -1,12 +1,6 @@
-import React, {useState} from 'react'
+import React from 'react';
 
 const TextInput = (props) => {
-
-    // const [focused, setFocused] = useState(false);
-
-    //  const handleFocus = (e) => {
-    //    setFocused(true);
-    //  };
 
   return (
     <div className="wrap mb-4">

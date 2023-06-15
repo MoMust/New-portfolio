@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import "../Css/HomeStyle.css";
+import "./HomeStyle.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import ConstructionIcon from "@mui/icons-material/Construction";
 import DeveloperBoardIcon from "@mui/icons-material/DeveloperBoard";
 import PsychologyIcon from "@mui/icons-material/Psychology";
-import Skill from "./Skills";
+import Skill from "./Skills/Skills";
 // import ScriptTag from "./NavScroll";
 
 function Home() {

@@ -1,12 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import "../Css/MyWork.css";
-import doc1 from "../Images/doc1.png";
-import doc2 from "../Images/doc2.png";
-import lakarProject from "../Images/lakarDatabas.png";
-import sportSkor from "../Images/sportSkor.png";
-import SearchBar from "./Repo";
-import ImgModal from "./ImageModal";
+import "./MyProjects.css";
+import doc1 from "../../Images/velo1.png";
+import doc2 from "../../Images/velo2.png";
+import lakarProject from "../../Images/lakarDatabas.png";
+import sportSkor from "../../Images/sportSkor.png";
+import SearchBar from "../Repo";
+import ImgModal from "./ImageModal/ImageModal";
 // import Projects from './Projects';
 
 function MyWork() {
