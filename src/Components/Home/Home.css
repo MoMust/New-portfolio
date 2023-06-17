@@ -33,8 +33,7 @@
   width: 80%;
   font-size: 3vh;
   text-align: center;
-
-  color: rgb(78, 156, 115);
+  color: rgb(127, 183, 127);
   text-align: center;
   border-radius: 10px;
 }
@@ -43,7 +42,7 @@
 .front-text h3 {
   width: 80%;
   font-size: 50px;
-  color: rgb(75, 200, 134);
+  color: rgb(127, 183, 127);
   text-align: center;
   border-radius: 10px;
 }
@@ -52,7 +51,7 @@
 .front-text p {
   width: 80%;
   font-size: 20px;
-  color: rgb(78, 156, 115);
+  color: rgb(127, 183, 127);
   margin-top: 40px;
   border-radius: 10px;
   text-align: center;
@@ -91,7 +90,7 @@
 
 .custom-shape-divider-top-1658751484 .shape-fill {
   padding: 0;
-  fill: rgb(75, 200, 134);
+  fill: rgb(127, 183, 127);
 }
 
 .custom-shape-divider-top-1658751484 svg {
@@ -112,4 +111,4 @@
   .front-side {
     margin-top: 20px;
   }
-}/*# sourceMappingURL=HomeStyle.css.map */
+}/*# sourceMappingURL=Home.css.map */

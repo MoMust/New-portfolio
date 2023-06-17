@@ -6,7 +6,8 @@
 $base-green: rgb(21, 141, 71);
 $background: rgb(42, 52, 117);
 
-$cloud: rgb(98, 152, 124);
+// $cloud: rgb(98, 152, 124);
+$cloud: rgb(127, 183, 127);
 $midnightBlue: #2a6574;
 $black: #212529;
 
@@ -53,7 +54,7 @@ $black: #212529;
 
   width: 80%;
   font-size: 50px;
-  color: $strong-cloud;
+  color: $cloud;
   text-align: center;
   border-radius: 10px;
 
@@ -104,7 +105,7 @@ $black: #212529;
 .custom-shape-divider-top-1658751484 .shape-fill {
 
   padding: 0;
-  fill: $strong-cloud;
+  fill: $cloud;
 }
 
 .custom-shape-divider-top-1658751484 svg {

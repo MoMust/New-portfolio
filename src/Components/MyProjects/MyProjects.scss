@@ -1,6 +1,7 @@
 $base-green: rgb(21, 141, 71);
 $background: rgb(42, 52, 117);
-$cloud: rgb(78, 156, 115);
+// $cloud: rgb(78, 156, 115);
+$cloud: rgb(127, 183, 127);
 $line: #2a6574;
 $black: #212529;
 .line-smal {
@@ -28,70 +29,78 @@ $black: #212529;
 }
 
 .header-mywork {
-  // padding-left: 65px;
   h1 {
     color: $cloud;
-    // color: rgb(125, 157, 142);
   }
   p {
     color: $cloud;
-    // color: rgb(82, 155, 121);
     font-size: 20px;
   }
 }
 
 .content-mywork {
   border-radius: 10px;
-
   background-color: rgba(136, 181, 152, 0.129);
   padding-bottom: 50px;
+  h1 {
+    color: rgb(125, 157, 142);
+  }
+  h2 {
+    color: rgb(82, 155, 121);
+  }
+  .project-desc {
+    padding-top: 60px;
+    padding-left: 60px;
+    width: 70%;
+    p {
+      color: rgb(127, 183, 127);
+      font-size: 20px;
+    }
+    
+    
+  }
+  .dev-list{
+      .item{
+        background-color: $black;
+        border-radius: 5px;
+        font-size: 17px;
+        color: $cloud;
+    }
+    }
 }
-.content-mywork h1 {
-  color: rgb(125, 157, 142);
-}
-.content-mywork h3 {
-  color: rgb(82, 155, 121);
-}
-
-.content-work-img img {
-  filter: grayscale(20%) brightness(75%);
-  border-radius: 10px;
-  height: 30vh;
-
-  cursor: zoom-in;
-  padding: 0;
-  margin-top: 20px;
-}
-
 .content-work-img {
   display: flex;
   justify-content: center;
+  img {
+    filter: grayscale(20%) brightness(75%);
+    border-radius: 10px;
+    height: 30vh;
+
+    cursor: zoom-in;
+    padding: 0;
+    margin-top: 20px;
+  }
 }
 
-.content-mywork-mini {
-  border-radius: 10px;
-  border: 1px solid;
-  background-color: rgba(136, 181, 152, 0.129);
-}
+// .content-mywork-mini {
+//   border-radius: 10px;
+//   border: 1px solid;
+//   background-color: rgba(136, 181, 152, 0.129);
+// }
 
-.content-cv {
-  text-align: center;
-  height: 60vh;
-}
-.content-header-cv {
-  color: rgb(125, 157, 142);
-}
-.content-cv iframe {
-  padding: 20px;
-  filter: grayscale(20%) brightness(75%);
-  width: 80%;
-  height: 90%;
-}
-
-.project-names {
-  text-align: center;
-  padding-top: 20px;
-}
+// .content-cv {
+//   text-align: center;
+//   height: 60vh;
+// }
+// .content-header-cv {
+//   color: rgb(125, 157, 142);
+// }
+// .content-cv iframe {
+//   padding: 20px;
+//   filter: grayscale(20%) brightness(75%);
+//   width: 80%;
+//   height: 90%;
+// }
 
 .repo {
   font-family: "Staatliches", cursive;

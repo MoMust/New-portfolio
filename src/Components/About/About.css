@@ -90,7 +90,7 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  color: rgb(78, 156, 115);
+  color: rgb(127, 183, 127);
   font-weight: 600;
 }
 
@@ -122,17 +122,17 @@
   }
 }
 .about-info-top h3 {
-  color: rgb(78, 156, 115);
+  color: rgb(127, 183, 127);
 }
 .about-info-top h1 {
-  color: rgb(78, 156, 115);
+  color: rgb(127, 183, 127);
 }
 
 .about-info-bottom {
   color: rgb(34, 149, 47);
 }
 .about-info-bottom p {
-  color: rgb(78, 156, 115);
+  color: rgb(127, 183, 127);
   font-size: 20px;
 }
 

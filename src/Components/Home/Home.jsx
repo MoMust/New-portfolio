@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./HomeStyle.css";
+import "./Home.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
