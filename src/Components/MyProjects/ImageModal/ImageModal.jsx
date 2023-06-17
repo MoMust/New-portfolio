@@ -1,37 +1,38 @@
 
 import React, {useState} from 'react'
 import './ImageModal.css'
+import ProjectContent from './ProjectContent.jsx'
 const ImageModal = (props) => {
-
 
 
   return (
     <>
       <div className="row row-custom-mywork">
         <div className="content-mywork col-lg-12">
-          <div className="project-names">
-            <h3>{props.title}</h3>
-         </div>
+          <ProjectContent
+            setImageModal={props.setImageModal}
+            img1={props.img1}
+            img2={props.img2}
+          />
+          <ProjectContent
+            setImageModal={props.setImageModal}
+            img1={props.img3}
+            img2={props.img4}
+          />
 
-          <div className="row row-work-images mt-5">
-            <div
-              className="content-work-img col-lg-6"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-
-              onClick={() => props.setImageModal(props.img1)}
-            >
-              <img id="img1" src={props.img1} alt=""></img>
+          <div className="project-desc">
+            <h2>{props.title}</h2>
+            <div className="line-smal"></div>
+            <p className="mt-3">{props.desc}</p>
+            <div className="dev-list d-flex  gap-3">
+              {props.list.map((item) => {
+                return (
+                  <p className="item ps-2 pe-2" key={item}>
+                    {item}
+                  </p>
+                );
+              })}
             </div>
-            <div
-              className="content-work-img col-lg-6"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              onClick={() => props.setImageModal(props.img2)}
-            >
-              <img id="img1" src={props.img2} alt=""></img>
-            </div>
-
           </div>
         </div>
       </div>
@@ -43,14 +44,12 @@ const ImageModal = (props) => {
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-
         <div className="modal-dialog modal-xl">
           <div className="modal-content">
             <div className="modal-header border-0">
               <button
                 type="button"
                 className="btn-close btn-close-white"
-
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
@@ -58,7 +57,6 @@ const ImageModal = (props) => {
 
             <div className="modal-body border-0">
               <img src={props.imageModal}></img>
-
             </div>
           </div>
         </div>
