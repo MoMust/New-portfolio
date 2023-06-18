@@ -3,13 +3,13 @@ import Home from "./Components/Home/Home.jsx";
 import About from "./Components/About/About.jsx";
 import MyProjects from "./Components/MyProjects/MyProjects.jsx";
 import Contact from "./Components/Contact/Contact.jsx";
-// import Nav from '../src/Components/Nav';
+import Nav from './Components/Nav/Nav.js';
 
 function App() {
   return (
     <>
-      {/* <Nav /> */}
       <div className="main">
+        <Nav />
         <Home />
         <About />
         <MyProjects />
