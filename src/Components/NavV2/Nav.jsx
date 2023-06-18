@@ -1,34 +1,15 @@
-// import "./Fonts.css";
-import {React} from "react";
+// import "../Css/Fonts.css";
+import { React } from "react";
 import { Link } from "react-scroll";
 // import {NavLink} from 'react-router-dom';
 import "./NavStyle.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-// document.addEventListener("DOMContentLoaded", function () {
-
-
-//   var navbar = document.getElementById("headerScroll");
-//   var sticky = navbar.offsetTop;
-
-
-//   function myFunction() {
-//     if (window.pageYOffset >= sticky) {
-//       navbar.classList.add("sticky");
-//     } else {
-//       navbar.classList.remove("sticky");
-//     }
-//   }
-
-//   window.onscroll = function () {
-//     myFunction();
-//   };
-// });
+import CircleIcon from "@mui/icons-material/Circle";
+// import ScriptTag from "./NavScroll";
 
 function Nav() {
-
   return (
-    <header className="sticky-top" id="headerScroll">
+    <header id="headerScroll">
       <div className="container-nav " id="nav">
         <nav>
           <div className="nav-bar">
@@ -42,37 +23,56 @@ function Nav() {
                 duration={500}
                 className="nav-items"
               >
-                Home
+                <div>
+                  <span className="nav-title">Home</span>
+                </div>
+                <div>
+                  <CircleIcon />
+                </div>
               </Link>
               <Link
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={300}
                 duration={500}
                 className="nav-items"
               >
-                About
+                <span className="nav-title">About</span>
+                <CircleIcon />
               </Link>
               <Link
                 to="myWork"
                 spy={true}
                 smooth={true}
-                offset={30}
+                offset={210}
                 duration={500}
                 className="nav-items"
               >
-                My work
+                <span className="nav-title">Projects</span>
+                <CircleIcon />
+              </Link>
+              <Link
+                to="repo"
+                spy={true}
+                smooth={true}
+                offset={-300}
+                duration={500}
+                className="nav-items"
+              >
+                <span className="nav-title">Repo</span>
+                <CircleIcon />
               </Link>
               <Link
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={10}
                 duration={500}
-                className="nav-items-right ms-lg-auto contact-link"
+                className="nav-items contact-link"
               >
-                Contact
+                <span className="nav-title">Contact</span>
+                <CircleIcon />
               </Link>
             </ul>
           </div>
@@ -83,4 +83,3 @@ function Nav() {
 }
 
 export default Nav;
-

@@ -1,5 +1,13 @@
+$base-green: rgb(21, 141, 71);
+$background: rgb(42, 52, 117);
+
+// $cloud: rgb(98, 152, 124);
+$cloud: rgb(127, 183, 127);
+$midnightBlue: #2a6574;
+$black: #212529;
+
 header{
-  background-color: rgb(10, 10, 10);
+  background-color: $black;
   height: 50px;
   width: 100vw;
   z-index: 1;

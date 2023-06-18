@@ -1,18 +1,19 @@
-header {
-  background-color: #212529;
-  height: 50px;
-  width: 100vw;
-  z-index: 1;
-}
-
 .container-nav {
-  display: flex;
+  position: fixed;
+  right: 10px;
+  top: 350px;
   margin-top: 0;
   z-index: 1;
 }
-
-/* NAV */
-.nav-items {
+.container-nav .nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 8px;
+}
+.container-nav .nav-bar .nav-items {
+  display: flex;
+  flex-direction: row;
   list-style: none;
   text-decoration: none;
   color: rgb(249, 252, 253);
@@ -20,35 +21,16 @@ header {
   font-size: 25px;
   font-family: "Poppins", sans-serif;
 }
-
-.nav-items .active {
+.container-nav .nav-bar .nav-items .active {
   font-size: 27 px;
   transition: 1s;
   color: rgb(179, 182, 18);
 }
-
-.nav-items:hover {
-  font-size: 27 px;
-  transition: 1s;
+.container-nav .nav-bar .nav-items:hover {
   color: rgb(179, 182, 18);
 }
 
-.nav-items-right {
-  list-style: none;
-  text-decoration: none;
-  color: rgb(242, 247, 243);
-  font-weight: 600;
-  font-size: 25px;
-  font-family: "Poppins", sans-serif;
-  padding-left: 200px;
-}
-
-nav ul {
-  display: flex;
-  gap: 100px;
-  padding-top: 8px;
-}
-
+/* NAV */
 .active-item {
   color: rgb(248, 242, 242);
   border-bottom: 0.1em rgb(252, 252, 255);
