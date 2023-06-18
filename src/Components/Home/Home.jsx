@@ -10,19 +10,6 @@ import Skill from "./Skills/Skills";
 // import ScriptTag from "./NavScroll";
 
 function Home() {
-  // Circle text animation START
-  // useEffect(() => {
-  //   const text = document.querySelector(".outer-text p");
-  //   text.innerHTML = text.innerText
-  //     .split("")
-  //     .map(
-  //       (char, i) =>
-  //         `<span style="transform:rotate(${i * 7.5}deg)">${char}</span>`
-  //     )
-  //     .join("");
-  // });
-
-  // Circle text animation END
   return (
     <div className="body-class" id="home">
       <div className="container-front row d-flex justify-content-center mt-0 m-0 p-0 gap-4">
@@ -120,18 +107,6 @@ function Home() {
             title={"KNOWLEDGE"}
             list={["SEO", "UX", "ECMAScript 6", "MVC", "DevOps"]}
           />
-          {/* <div className="circle w-90 ">
-            <div className="inner-text">
-              <p>Knowledge</p>
-            </div>
-
-            <div className="outer-text">
-              <p>
-                
-                JS - React - React Native - API - SASS - HTML - CSS
-              </p>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

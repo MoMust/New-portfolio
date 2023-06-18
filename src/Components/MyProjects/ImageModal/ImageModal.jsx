@@ -1,13 +1,28 @@
 
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './ImageModal.css'
 import ProjectContent from './ProjectContent.jsx'
 const ImageModal = (props) => {
+  // ANIMATION, CREATE COMPONENET
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    });
 
+    const hiddenElements = document.querySelectorAll(".hidden");
+    hiddenElements.forEach((el) => observer.observe(el));
+  });
 
   return (
     <>
-      <div className="row row-custom-mywork">
+      <div className="row hidden row-custom-mywork">
         <div className="content-mywork col-lg-12">
           <ProjectContent
             setImageModal={props.setImageModal}
