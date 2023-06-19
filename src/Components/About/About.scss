@@ -170,11 +170,15 @@ $line: #2a6574;
   font-size: 20px;
 }
 }
-.about-info-bottom{
+
+@media screen and (max-width: 768px) {
+  .about-info-bottom{
   p{
   text-align: center;
   }
 }
+}
+
 
 
 .box-header {
