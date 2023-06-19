@@ -51,7 +51,7 @@ $black: #212529;
   .project-desc {
     padding-top: 60px;
     padding-left: 60px;
-    width: 70%;
+    
     p {
       color: rgb(127, 183, 127);
       font-size: 20px;
@@ -65,6 +65,7 @@ $black: #212529;
         border-radius: 5px;
         font-size: 17px;
         color: $cloud;
+        max-width: fit-content;
     }
     }
 }

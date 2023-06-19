@@ -45,7 +45,6 @@
 .content-mywork .project-desc {
   padding-top: 60px;
   padding-left: 60px;
-  width: 70%;
 }
 .content-mywork .project-desc p {
   color: rgb(127, 183, 127);
@@ -56,6 +55,8 @@
   border-radius: 5px;
   font-size: 17px;
   color: rgb(127, 183, 127);
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .content-work-img {

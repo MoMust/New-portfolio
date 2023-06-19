@@ -141,6 +141,16 @@
   color: rgb(127, 183, 127);
 }
 
+@media screen and (max-width: 768px) {
+  .about-info-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-info-top h3, .about-info-top h1 {
+    text-align: center;
+  }
+}
 .about-info-bottom {
   color: rgb(34, 149, 47);
 }
@@ -149,7 +159,11 @@
   font-size: 20px;
 }
 
-.about-info-bottom .box-header {
+.about-info-bottom p {
+  text-align: center;
+}
+
+.box-header {
   display: flex;
 }
 

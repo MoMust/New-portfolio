@@ -39,7 +39,7 @@ const ImageModal = (props) => {
             <h2>{props.title}</h2>
             <div className="line-smal"></div>
             <p className="mt-3">{props.desc}</p>
-            <div className="dev-list d-flex gap-3">
+            <div className="dev-list">
               {props.list.map((item) => {
                 return (
                   <p className="item ps-2 pe-2" key={item}>

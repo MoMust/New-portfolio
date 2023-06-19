@@ -66,7 +66,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="row front-side col-lg-5 pt-md-5 px-4">
+        <div className="row front-side col-lg-5 pt-md-5 mt-5 px-4">
           <Skill
             icon={
               <DeveloperBoardIcon style={{ width: "50px", height: "50px" }} />

@@ -150,7 +150,18 @@ $line: #2a6574;
   }
 }
 
-
+@media screen and (max-width: 768px) {
+  .about-info-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3, h1{
+    text-align: center;
+  }
+  
+  
+}
+}
 .about-info-bottom {
   color: rgb(34, 149, 47);
   // margin-top: 10%;
@@ -159,7 +170,11 @@ $line: #2a6574;
   font-size: 20px;
 }
 }
-.about-info-bottom 
+.about-info-bottom{
+  p{
+  text-align: center;
+  }
+}
 
 
 .box-header {

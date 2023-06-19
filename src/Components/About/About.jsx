@@ -47,9 +47,7 @@ function About() {
       </div>
       {/* PROFILE CARD */}
       <div className="row row-custom d-flex justify-content-center pt-5 ">
-        <div
-          className={`profile-card hidden col-lg-4 col-md-4`}
-        >
+        <div className={`profile-card hidden col-lg-4 col-md-4`}>
           <div className="profile-info-container">
             <div className="profile-image">
               <img src={Pic} alt=""></img>
@@ -59,8 +57,11 @@ function About() {
         {/* PROFILE CARD END*/}
         <div className={`about-info hidden col-lg-6 col-md-6 mt-5`}>
           <div className="about-info-top">
-            <h1>About me</h1>
-            <div className="line-smal"></div>
+            <div className="header">
+              <h1>About me</h1>
+              <div className="line-smal"></div>
+            </div>
+
             <h3 className="pt-3">
               I'm a newly minted Front-End Developer, equipped with the latest
               knowledge and passion for transforming concepts into reality.
