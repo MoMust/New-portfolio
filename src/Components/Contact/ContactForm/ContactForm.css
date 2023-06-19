@@ -39,6 +39,7 @@
 
 .form textarea, .form input {
   width: 450px;
+  max-width: 90%;
   height: 60px;
   border-radius: 10px;
   background-color: rgb(78, 156, 115);
