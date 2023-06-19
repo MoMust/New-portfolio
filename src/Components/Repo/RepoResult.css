@@ -1,0 +1,16 @@
+ul li {
+  background-color: #212529;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0px;
+  padding-bottom: 2;
+  border-radius: 5px;
+}
+ul li .item {
+  font-size: 16px;
+  color: rgb(127, 183, 127);
+  height: 34px;
+}
+ul li .item:hover {
+  color: rgb(127, 183, 127);
+}/*# sourceMappingURL=RepoResult.css.map */

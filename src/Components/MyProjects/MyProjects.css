@@ -101,10 +101,18 @@
 }
 
 .repo button {
+  background-color: white;
+  color: rgb(127, 183, 127);
   border: none;
   margin-left: 10px;
   /* For search */
   /* margin-left: 10px; */
   font-size: 2vw;
   width: 15%;
+}
+
+.repo button:hover {
+  background-color: rgb(80, 149, 90);
+  transition: 0.3s;
+  color: white;
 }/*# sourceMappingURL=MyProjects.css.map */
