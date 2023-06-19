@@ -65,7 +65,7 @@ $black: #212529;
   width: 80%;
   font-size: 20px;
   color: $cloud;
-  margin-top: 40px;
+  margin-top: 10px;
   border-radius: 10px;
   text-align: center;
 }
@@ -79,16 +79,18 @@ $black: #212529;
   display: flex;
   gap: 50px;
   font-size: 30px;
+  .social-icons {
+  width:40px;
+  height: 40px;
+}
 }
 
-.social-icons {
-  transform: scale(1.8);
-}
+
 
 .social-icons:hover {
-  transform: scale(2.8);
-  transition: 1s;
-  color: blue;
+  
+  transition: 0.5s;
+  color: $cloud;
 }
 
 /* SVG Shape */

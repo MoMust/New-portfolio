@@ -13,7 +13,6 @@ function Home() {
   return (
     <div className="body-class" id="home">
       <div className="container-front row d-flex justify-content-center mt-0 m-0 p-0 gap-4">
-
         {/*Wave Shape */}
         <div className="custom-shape-divider-top-1658751484" id="shape">
           <svg
@@ -31,22 +30,21 @@ function Home() {
         <div className="front-text row col-lg-7 mt-5">
           <h2>Hi, i'm Mohammed</h2>
           <h3>Welcome to my portfolio</h3>
-          <div className="d-flex justify-content-start"></div>
+          {/* <div className="d-flex justify-content-start"></div> */}
           <p className="">
-            I'm a newly minted Front-End Developer, equipped with the latest
-            knowledge and passion for transforming concepts into reality. Though
-            my main toolkit involves the power and flexibility of the React
-            framework, I pride myself on my ability to learn and adapt to new
-            technologies and tools to build innovative and user-friendly digital
-            experiences. Having just completed my degree, I bring a fresh
-            perspective to front-end development, blending traditional
-            principles with modern design sensibilities. Feel free to explore my
-            portfolio to see the projects I've worked on and what I could bring
-            to your team.
+            Welcome to my portfolio website! Here you'll find an introduction to
+            me, my projects, and a way to contact me. Explore my background,
+            skills, and passion for web development. Discover my diverse
+            projects showcasing expertise in various technologies. Get in touch
+            for collaborations, opportunities, or to connect and discuss ideas.
+            Thank you for visiting!
           </p>
           <div className="social-media">
             <div className="soc-1">
-              <a href="https://www.facebook.com/profile.php?id=627371126">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=627371126"
+              >
                 <FacebookIcon
                   className="social-icons"
                   variant="contained"
@@ -55,7 +53,10 @@ function Home() {
               </a>
             </div>
             <div className="soc-2">
-              <a href="https://www.linkedin.com/in/moe-mustafa-14918a220/">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/moemustafafrontend/"
+              >
                 <LinkedInIcon
                   className="social-icons"
                   variant="contained"
@@ -66,7 +67,6 @@ function Home() {
           </div>
         </div>
         <div className="row front-side col-lg-5 pt-md-5 px-4">
-
           <Skill
             icon={
               <DeveloperBoardIcon style={{ width: "50px", height: "50px" }} />

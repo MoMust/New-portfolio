@@ -52,7 +52,7 @@
   width: 80%;
   font-size: 20px;
   color: rgb(127, 183, 127);
-  margin-top: 40px;
+  margin-top: 10px;
   border-radius: 10px;
   text-align: center;
 }
@@ -66,15 +66,14 @@
   gap: 50px;
   font-size: 30px;
 }
-
-.social-icons {
-  transform: scale(1.8);
+.social-media .social-icons {
+  width: 40px;
+  height: 40px;
 }
 
 .social-icons:hover {
-  transform: scale(2.8);
-  transition: 1s;
-  color: blue;
+  transition: 0.5s;
+  color: rgb(127, 183, 127);
 }
 
 /* SVG Shape */

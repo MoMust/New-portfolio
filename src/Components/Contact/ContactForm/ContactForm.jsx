@@ -141,7 +141,7 @@ function ContactForm() {
         </div>
         <button
           type="submit"
-          className="btn btn-primary"
+          className="btn "
           style={{ fontSize: "15px", width: "80px" }}
           data-bs-toggle="modal"
           data-bs-target="#sendSuccessModal"

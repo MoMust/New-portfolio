@@ -53,6 +53,15 @@
   color: rgb(78, 156, 115);
 }
 
+form .btn {
+  background-color: white;
+  color: rgb(78, 156, 115);
+}
+form .btn:hover {
+  background-color: rgb(78, 156, 115);
+  color: white;
+}
+
 .submit-button {
   background-color: rgb(21, 97, 152);
   color: rgb(198, 191, 191);

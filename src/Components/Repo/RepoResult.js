@@ -14,7 +14,7 @@ const SearchResult = (props) => {
           </li>
         ))
       ) : (
-        <li>Hit search to get projects</li>
+        <li>Hit the button to get projects</li>
       );
   return (
       <ul className='d-flex flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-md-column flex-column gap-3'>{reposList}</ul>
