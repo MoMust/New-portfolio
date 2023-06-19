@@ -20,7 +20,7 @@ import show2 from "../../Images/show2.png";
 import show3 from "../../Images/show3.png";
 import show4 from "../../Images/show4.png";
 
-import SearchBar from "../Repo";
+import Repo from "../Repo/Repo";
 import ImgModal from "./ImageModal/ImageModal";
 // import Projects from './Projects';
 
@@ -109,9 +109,9 @@ function MyProjects() {
           desc="
           This is a mobile application that allows users to explore global demographic data by retrieving population figures for any city worldwide. In addition to city-specific data, the app provides information on the three most populated cities within a searched country. The application is designed for a variety of users, including demographics enthusiasts, travelers, and researchers. Essentially, this app serves as a comprehensive, regularly updated database for city and country population figures."
         />
-        <div className="repo">
-          <h1>Search in my repository</h1>
-          <SearchBar />
+        <div className="repo d-flex flex-column justify-content-center">
+          <h1 className="text-center">Get my Github repositories</h1>
+          <Repo />
         </div>
 
         {/* <div className="row row-custom-mywork">

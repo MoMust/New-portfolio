@@ -1,0 +1,32 @@
+$base-green: rgb(21, 141, 71);
+$background: rgb(42, 52, 117);
+
+// $cloud: rgb(98, 152, 124);
+$cloud: rgb(127, 183, 127);
+$midnightBlue: #2a6574;
+$black: #212529;
+ul {
+  li{
+    background-color: $black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 2;
+    border-radius: 5px;
+    
+    .item {
+    font-size: 16px;
+    color: $cloud;
+    height: 34px;
+    
+  }
+  .item:hover {
+    // padding: 3px 7px;
+    // background-color: rgb(25, 23, 23);
+    // border-radius: 5px;
+    // font-size: 17px;
+    color: $cloud;
+  }
+  }
+  
+}

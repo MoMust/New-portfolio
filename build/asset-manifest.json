@@ -1,19 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.62ccf894.css",
-    "main.js": "/static/js/main.c9464fce.js",
-    "static/media/backgroundCode.png": "/static/media/backgroundCode.97e14aa16035f57d9c40.png",
-    "static/media/doc2.png": "/static/media/doc2.3df9375c73aac3f723d7.png",
-    "static/media/sportSkor.png": "/static/media/sportSkor.f4fa86f352a15c469893.png",
-    "static/media/doc1.png": "/static/media/doc1.ecfbc6a1d013b9af3889.png",
-    "static/media/profil-bild.png": "/static/media/profil-bild.465e9fac05f860721901.png",
-    "static/media/lakarDatabas.png": "/static/media/lakarDatabas.186aadd7f76d087130f0.png",
+    "main.css": "/static/css/main.fb7f718d.css",
+    "main.js": "/static/js/main.e1aa7334.js",
+    "static/media/velo4.png": "/static/media/velo4.4a2f303e0bb61ec3ad1d.png",
+    "static/media/trip1.png": "/static/media/trip1.82e49ce272e8fb4f4a1c.png",
+    "static/media/trip4.png": "/static/media/trip4.80cbce8974cc9984431c.png",
+    "static/media/trip2.png": "/static/media/trip2.485456c64bff001c5038.png",
+    "static/media/velo1.png": "/static/media/velo1.d21cabf7b125f7c70a94.png",
+    "static/media/velo3.png": "/static/media/velo3.8f3a3f207cf43b73b194.png",
+    "static/media/velo2.png": "/static/media/velo2.b0d8e37f29fa7a7a5ca6.png",
+    "static/media/smart3.png": "/static/media/smart3.8ebeedc052401fc53f19.png",
+    "static/media/smart1.png": "/static/media/smart1.051b146d53690c217bb3.png",
+    "static/media/trip3.png": "/static/media/trip3.b5a2de2a76d63c88b356.png",
+    "static/media/smart2.png": "/static/media/smart2.7e47c8626435a1b21441.png",
+    "static/media/smart4.png": "/static/media/smart4.446edd4d768a529f5912.png",
+    "static/media/pfi.png": "/static/media/pfi.67585b42dd0e33f50a07.png",
+    "static/media/show3.png": "/static/media/show3.51d8e4164dfba7b5202b.png",
+    "static/media/show2.png": "/static/media/show2.3ee4a8ac4b06d98bdd1e.png",
+    "static/media/show1.png": "/static/media/show1.fd8eef2e1a717c7118c3.png",
+    "static/media/show4.png": "/static/media/show4.8102fba1fb84be709d41.png",
     "index.html": "/index.html",
-    "main.62ccf894.css.map": "/static/css/main.62ccf894.css.map",
-    "main.c9464fce.js.map": "/static/js/main.c9464fce.js.map"
+    "main.fb7f718d.css.map": "/static/css/main.fb7f718d.css.map",
+    "main.e1aa7334.js.map": "/static/js/main.e1aa7334.js.map"
   },
   "entrypoints": [
-    "static/css/main.62ccf894.css",
-    "static/js/main.c9464fce.js"
+    "static/css/main.fb7f718d.css",
+    "static/js/main.e1aa7334.js"
   ]
 }
