@@ -1,23 +1,34 @@
 $base-green: rgb(21, 141, 71);
 $background: rgb(42, 52, 117);
 $cloud: rgb(98, 152, 124);
-$test: #2A6574;
+$test: #2a6574;
 $black: #212529;
-   
-   .category{
-     .item{
-        background-color: $black;
-        border-radius: 5px;
-        font-size: 17px;
-        color: $cloud;
+
+.category {
+  .item {
+    background-color: $black;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 17px;
+    color: $cloud;
+    // width: fit-content;
+  }
+  h4 {
+    color: $cloud;
+  }
+  @media screen and (max-width: 454px) {
+    .item {
+    font-size: 13px;
+    
+  }
+    h4 {
+      font-size: 15px;
     }
-    h4{
-        color: $cloud;
-    }
-    .line{
-        width: 100%;
-        height: 3px;
-        background-color: $test;
-    }
-   }
-   
+  }
+  
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: $test;
+  }
+}
