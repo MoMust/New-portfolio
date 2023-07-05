@@ -2,6 +2,7 @@
 import React, {useState, useEffect} from 'react'
 import './ImageModal.css'
 import ProjectContent from './ProjectContent.jsx'
+
 const ImageModal = (props) => {
   // ANIMATION, CREATE COMPONENET
   useEffect(() => {
@@ -10,6 +11,7 @@ const ImageModal = (props) => {
         console.log(entry);
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
+          observer.unobserve(entry.target); // Unobserve the element
         } else {
           entry.target.classList.remove("show");
         }
@@ -18,7 +20,12 @@ const ImageModal = (props) => {
 
     const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((el) => observer.observe(el));
-  });
+
+    // Clean up function
+    return () => {
+      hiddenElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
 
   return (
     <>
