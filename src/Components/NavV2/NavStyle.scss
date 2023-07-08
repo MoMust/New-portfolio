@@ -1,12 +1,13 @@
-// header{
-//   background-color: rgb(10, 10, 10);
-//   height: 50px;
-//   width: 100vw;
-//   z-index: 1;
-// }
+$base-green: rgb(21, 141, 71);
+$background: rgb(42, 52, 117);
+
+// $cloud: rgb(98, 152, 124);
+$cloud: rgb(127, 183, 127);
+$midnightBlue: #2a6574;
+$black: #212529;
+
 .container-nav {
   position: fixed;
-
   right: 10px;
   top: 350px;
   margin-top: 0;
@@ -15,11 +16,11 @@
     ul {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 30px;
       padding-top: 8px;
-      .nav-title {
-        // display: none;
-      }
+      // .nav-title {
+      //   display: none;
+      // }
     }
 
     .nav-items {
@@ -31,34 +32,45 @@
       font-weight: 600;
       font-size: 25px;
       font-family: "Poppins", sans-serif;
-      .active {
-        font-size: 27 px;
-        transition: 1s;
-        color: rgb(179, 182, 18);
-      }
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: $cloud;
+      cursor: pointer;
+      
+      
     }
     .nav-items:hover{
-      
-      color: rgb(179, 182, 18);
-      
-      // .nav-title {
-      //   display: block;
-      // }
+      transition: 400ms;
+      transform: scale(1.4); 
+      // background-color: $midnightBlue;
     }
+    .nav-items::before{
+    content: attr(data-section);
+    position: absolute;
+    right: 10px;
+    transform: translateY(-25%);
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(224, 224, 224);
+    // background-color: $midnightBlue;
+    padding: 2px 16px;
+    opacity: 0;
+    // transition: all 400ms ease;
+    
   }
+    .nav-items:hover::before{
+    opacity: 1;
+    
+  }
+    .nav-items.active{
+    background-color: $midnightBlue;
+    
+  }
+  }
+
+  
 }
-
-/* NAV */
-
-// .nav-items-right {
-//   list-style: none;
-//   text-decoration: none;
-//   color: rgb(242, 247, 243);
-//   font-weight: 600;
-//   font-size: 25px;
-//   font-family: "Poppins", sans-serif;
-//   padding-left: 200px;
-// }
 
 .active-item {
   color: rgb(248, 242, 242);
@@ -95,10 +107,7 @@
   }
 }
 @media screen and (max-width: 770px) {
-  header {
-    background-color: rgb(14, 13, 13);
-    height: 240px;
-  }
+
   .nav-items,
   .nav-items-right {
     font-size: 30px;

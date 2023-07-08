@@ -1,6 +1,7 @@
 import React from "react";
 import ContactForm from "./ContactForm/ContactForm.jsx";
 import "./ContactForm/ContactForm.css";
+import "./Contact.css"
 function Contact() {
   return (
     <div className="body-class-contact-form" id="contact">
