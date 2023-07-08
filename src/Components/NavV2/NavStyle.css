@@ -8,7 +8,7 @@
 .container-nav .nav-bar ul {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   padding-top: 8px;
 }
 .container-nav .nav-bar .nav-items {
@@ -20,17 +20,34 @@
   font-weight: 600;
   font-size: 25px;
   font-family: "Poppins", sans-serif;
-}
-.container-nav .nav-bar .nav-items .active {
-  font-size: 27 px;
-  transition: 1s;
-  color: rgb(179, 182, 18);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(127, 183, 127);
+  cursor: pointer;
 }
 .container-nav .nav-bar .nav-items:hover {
-  color: rgb(179, 182, 18);
+  transition: 400ms;
+  transform: scale(1.4);
+}
+.container-nav .nav-bar .nav-items::before {
+  content: attr(data-section);
+  position: absolute;
+  right: 10px;
+  transform: translateY(-25%);
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(224, 224, 224);
+  padding: 2px 16px;
+  opacity: 0;
+}
+.container-nav .nav-bar .nav-items:hover::before {
+  opacity: 1;
+}
+.container-nav .nav-bar .nav-items.active {
+  background-color: #2a6574;
 }
 
-/* NAV */
 .active-item {
   color: rgb(248, 242, 242);
   border-bottom: 0.1em rgb(252, 252, 255);
@@ -63,10 +80,6 @@
   }
 }
 @media screen and (max-width: 770px) {
-  header {
-    background-color: rgb(14, 13, 13);
-    height: 240px;
-  }
   .nav-items,
   .nav-items-right {
     font-size: 30px;
