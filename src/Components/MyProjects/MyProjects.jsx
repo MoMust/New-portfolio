@@ -36,11 +36,11 @@ function MyProjects() {
           <div className="px-3 header-mywork mt-5 ">
             <h1 className="">My projects</h1>
             <div className="line-smal"></div>
-            <div className="pt-3">
+            {/* <div className="pt-3">
               <p>
                 Through my school time i've managed to work on a few things.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
         {/* 1 */}
@@ -61,7 +61,7 @@ function MyProjects() {
             "SASS",
             "Bootstrap",
           ]}
-          title="PROJECT VELO EL"
+          title="VELO EL"
           desc="VeloEl is a e-commerce website where users can browse and buy electric bikes. Im currently working on further developing and deploying the webbapp for a customer to use as a new version of their website with the same name."
         />
 
@@ -105,7 +105,7 @@ function MyProjects() {
           setImageModal={setImageModal}
           imageModal={imageModal}
           list={["React Native", "TypeScript", "TSX", "CSS"]}
-          title="Show Pop"
+          title="City Pop"
           desc="
           This is a mobile application that allows users to explore global demographic data by retrieving population figures for any city worldwide. In addition to city-specific data, the app provides information on the three most populated cities within a searched country. The application is designed for a variety of users, including demographics enthusiasts, travelers, and researchers. Essentially, this app serves as a comprehensive, regularly updated database for city and country population figures."
         />
