@@ -27,7 +27,7 @@ function Home() {
             ></path>
           </svg>
         </div>
-        <div className="front-text row col-lg-7 mt-5">
+        <div className="front-text row col-lg-6 mt-5">
           <h2>Hi, i'm Mohammed</h2>
           <h3>Welcome to my portfolio</h3>
           {/* <div className="d-flex justify-content-start"></div> */}
