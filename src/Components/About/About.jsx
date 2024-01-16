@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 
 import "./About.css";
 import Pic from "../../Images/pfi.png";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import SchoolIcon from "@mui/icons-material/School";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
-import CodeIcon from "@mui/icons-material/Code";
-import CropDinIcon from "@mui/icons-material/CropDin";
+// import FacebookIcon from "@mui/icons-material/Facebook";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
+// import SchoolIcon from "@mui/icons-material/School";
+// import LocationOnIcon from "@mui/icons-material/LocationOn";
+// import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
+// import CodeIcon from "@mui/icons-material/Code";
+// import CropDinIcon from "@mui/icons-material/CropDin";
 
 function About() {
   // function printOutDate() {
@@ -21,7 +21,7 @@ function About() {
   //   return newDate;
   // }
     const [animationTriggered, setAnimationTriggered] = useState(false);
-
+    console.log(animationTriggered)
     useEffect(() => {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {

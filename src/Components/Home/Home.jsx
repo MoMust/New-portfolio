@@ -1,13 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Home.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
 import ConstructionIcon from "@mui/icons-material/Construction";
 import DeveloperBoardIcon from "@mui/icons-material/DeveloperBoard";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import Skill from "./Skills/Skills";
-// import ScriptTag from "./NavScroll";
 
 function Home() {
   return (
@@ -30,8 +28,7 @@ function Home() {
         <div className="front-text row col-lg-6 mt-5">
           <h2>Hi, i'm Mohammed</h2>
           <h3>Welcome to my portfolio</h3>
-          {/* <div className="d-flex justify-content-start"></div> */}
-          <p className="">
+          <p>
             Welcome to my portfolio website! Here you'll find an introduction to
             me, my projects, and a way to contact me. Explore my background,
             skills, and passion for web development. Discover my diverse
@@ -43,6 +40,7 @@ function Home() {
             <div className="soc-1">
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://www.facebook.com/profile.php?id=627371126"
               >
                 <FacebookIcon
@@ -55,6 +53,7 @@ function Home() {
             <div className="soc-2">
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://www.linkedin.com/in/moemustafafrontend/"
               >
                 <LinkedInIcon

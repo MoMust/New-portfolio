@@ -27,7 +27,7 @@ import ImgModal from "./ImageModal/ImageModal";
 function MyProjects() {
   const [imageModal, setImageModal] = useState("");
 
-  // console.log(imageModal)
+  console.log('imageModal', imageModal)
 
   return (
     <div className="body-class-dark" id="myWork">
@@ -44,7 +44,6 @@ function MyProjects() {
           </div>
         </div>
         {/* 1 */}
-
         <ImgModal
           img1={velo1}
           img2={velo2}

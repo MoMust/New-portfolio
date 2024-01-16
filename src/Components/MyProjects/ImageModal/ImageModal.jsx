@@ -1,35 +1,34 @@
-
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import './ImageModal.css'
 import ProjectContent from './ProjectContent.jsx'
 
 const ImageModal = (props) => {
   // ANIMATION, CREATE COMPONENET
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        console.log(entry);
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-          observer.unobserve(entry.target); // Unobserve the element
-        } else {
-          entry.target.classList.remove("show");
-        }
-      });
-    });
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       console.log(entry);
+  //       if (entry.isIntersecting) {
+  //         entry.target.classList.add("show");
+  //         observer.unobserve(entry.target); // Unobserve the element
+  //       } else {
+  //         entry.target.classList.remove("show");
+  //       }
+  //     });
+  //   });
 
-    const hiddenElements = document.querySelectorAll(".hidden");
-    hiddenElements.forEach((el) => observer.observe(el));
+  //   const hiddenElements = document.querySelectorAll(".hidden");
+  //   hiddenElements.forEach((el) => observer.observe(el));
 
-    // Clean up function
-    return () => {
-      hiddenElements.forEach((el) => observer.unobserve(el));
-    };
-  }, []);
+  //   // Clean up function
+  //   return () => {
+  //     hiddenElements.forEach((el) => observer.unobserve(el));
+  //   };
+  // }, []);
 
   return (
     <>
-      <div className="row hidden row-custom-mywork">
+      <div className="row row-custom-mywork">
         <div className="content-mywork col-lg-12">
           <ProjectContent
             setImageModal={props.setImageModal}
@@ -78,7 +77,7 @@ const ImageModal = (props) => {
             </div>
 
             <div className="modal-body border-0">
-              <img src={props.imageModal}></img>
+              <img src={props.imageModal} alt=''></img>
             </div>
           </div>
         </div>
