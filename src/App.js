@@ -7,7 +7,6 @@ import Contact from "./Components/Contact/Contact.jsx";
 import NavV2 from './Components/NavV2/Nav.jsx';
 import './App.css'
 
-
 function App() {
   return (
     <>
