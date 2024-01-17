@@ -8,7 +8,7 @@ const SearchResult = (props) => {
       repos.length !== 0 ? (
         repos.data.map((item) => (
           <li key={item.id}>
-            <a className="item" target="_blank" href={item.html_url}>
+            <a className="item" target="_blank" rel="noreferrer" href={item.html_url}>
               {item.name}
             </a>
           </li>
