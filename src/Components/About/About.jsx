@@ -1,44 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 // import { useInView } from "react-intersection-observer";
 
 import "./About.css";
 import Pic from "../../Images/pfi.png";
-// import FacebookIcon from "@mui/icons-material/Facebook";
-// import LinkedInIcon from "@mui/icons-material/LinkedIn";
-// import SchoolIcon from "@mui/icons-material/School";
-// import LocationOnIcon from "@mui/icons-material/LocationOn";
-// import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
-// import CodeIcon from "@mui/icons-material/Code";
-// import CropDinIcon from "@mui/icons-material/CropDin";
 
 function About() {
-  // function printOutDate() {
-  //   const dateNow = new Date();
-  //   let month = dateNow.getUTCMonth() + 1; //months from 1-12
-  //   let day = dateNow.getUTCDate();
-  //   let year = dateNow.getUTCFullYear();
-  //   let newDate = `${day} - ${month} - ${year}`;
-  //   return newDate;
-  // }
-    const [animationTriggered, setAnimationTriggered] = useState(false);
-    console.log(animationTriggered)
-    useEffect(() => {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && !animationTriggered) {
-            entry.target.classList.add("show");
-            setAnimationTriggered(true);
-          }
-        });
-      });
 
-      const hiddenElements = document.querySelectorAll(".hidden");
-      hiddenElements.forEach((el) => observer.observe(el));
+     useEffect(() => {
+       const observer = new IntersectionObserver((entries) => {
+         entries.forEach((entry) => {
+           if (entry.isIntersecting) {
+             entry.target.classList.add("show");
+           }
+         });
+       });
 
-      return () => {
-        hiddenElements.forEach((el) => observer.unobserve(el));
-      };
-    }, [animationTriggered]);
+       const hiddenElements = document.querySelectorAll(".hidden");
+       hiddenElements.forEach((el) => observer.observe(el));
+
+       return () => {
+         hiddenElements.forEach((el) => observer.unobserve(el));
+       };
+     }, []);
 
   return (
     <div className="body-class-about" id="about">

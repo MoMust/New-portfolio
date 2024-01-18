@@ -3,33 +3,11 @@ import './ImageModal.css'
 import ProjectContent from './ProjectContent.jsx'
 
 const ImageModal = (props) => {
-  // ANIMATION, CREATE COMPONENET
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       console.log(entry);
-  //       if (entry.isIntersecting) {
-  //         entry.target.classList.add("show");
-  //         observer.unobserve(entry.target); // Unobserve the element
-  //       } else {
-  //         entry.target.classList.remove("show");
-  //       }
-  //     });
-  //   });
-
-  //   const hiddenElements = document.querySelectorAll(".hidden");
-  //   hiddenElements.forEach((el) => observer.observe(el));
-
-  //   // Clean up function
-  //   return () => {
-  //     hiddenElements.forEach((el) => observer.unobserve(el));
-  //   };
-  // }, []);
 
   return (
     <>
       <div className="row row-custom-mywork">
-        <div className="content-mywork col-lg-12">
+        <div className="content-mywork col-lg-11">
           <ProjectContent
             setImageModal={props.setImageModal}
             img1={props.img1}
