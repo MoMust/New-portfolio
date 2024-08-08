@@ -1,12 +1,68 @@
-.category .item {
+.category {
+  /* Make dropdown visible on hover */
+}
+.category .menu {
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+.category .menu .menu-title {
+  display: block;
+  height: 40px;
+  padding: 12px 0 0;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s background-color;
+}
+.category .menu .menu-title:hover {
+  background: rgb(98, 152, 124);
+  border-radius: 2px;
+  color: #212529;
+}
+.category .menu .menu-dropdown {
+  min-width: 100%;
+  padding: 15px 0;
+  position: absolute;
+  z-index: 100;
+  visibility: hidden; /* Initially hidden */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.category .menu .menu-dropdown .item {
   background-color: #212529;
   padding: 2px;
+  margin-bottom: 10px;
   border-radius: 5px;
   font-size: 17px;
   color: rgb(98, 152, 124);
 }
-.category h4 {
-  color: rgb(98, 152, 124);
+.category .menu .menu-dropdown > * {
+  cursor: default;
+  overflow: hidden;
+  height: 30px;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0);
+  white-space: nowrap;
+  transition: 0.5s height cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s padding cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s margin cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s 0.2s color, 0.2s background-color;
+}
+.category .menu:hover > .menu-dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.category .menu:not(:hover) > .menu-dropdown > * {
+  visibility: hidden;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  color: rgba(25, 25, 25, 0);
+  transition: 0.5s 0.1s height, 0.5s 0.1s padding, 0.5s 0.1s margin, 0.3s color, 0.6s visibility;
+  z-index: 99;
 }
 @media screen and (max-width: 454px) {
   .category .item {
