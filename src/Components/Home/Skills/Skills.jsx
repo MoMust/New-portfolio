@@ -5,7 +5,7 @@ const Skills = (props) => {
     <div className="category col-4 text-center">
       <div className="d-flex flex-column text-center">
         <div className="">{props.icon}</div>
-        <a className="mt-3 menu mb-0">
+        <button className="mt-3 menu mb-0" href="#">
           <h4 className="m-0 menu-title">{props.title}</h4>
           <div className="line mb-3"></div>
           <ul className="menu-dropdown">
@@ -17,7 +17,7 @@ const Skills = (props) => {
               );
             })}
           </ul>
-        </a>
+        </button>
       </div>
     </div>
   );

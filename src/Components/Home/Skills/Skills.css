@@ -2,7 +2,8 @@
   /* Make dropdown visible on hover */
 }
 .category .menu {
-  text-decoration: none;
+  background-color: transparent;
+  border: none;
   display: block;
   position: relative;
 }
