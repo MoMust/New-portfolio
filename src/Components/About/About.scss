@@ -7,14 +7,14 @@ $background-dark: #212529;
 $cloud: rgb(127, 183, 127);
 $line: #2a6574;
 
-.hidden{
+.hidden {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 1s;
 }
 
-.show{
+.show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
@@ -53,11 +53,7 @@ $line: #2a6574;
   max-width: 100%;
 }
 
-@media screen and (max-width: 784px) {
-  .row-custom {
-    gap: 0;
-  }
-}
+
 /* Profile card */
 .profile-card {
   text-align: center;
@@ -77,14 +73,6 @@ $line: #2a6574;
   margin-top: 50px;
 }
 
-@media screen and (max-width: 767px) {
-  .profile-image img {
-    border-radius: 10px;
-    width: 60vw;
-    height: 60vw;
-    margin-top: 50px;
-  }
-}
 
 .title-color {
   color: rgb(0, 255, 132);
@@ -134,51 +122,25 @@ $line: #2a6574;
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .about-info {
-  padding-left: 30px;
-}
-}
 
-
-.about-info-top{
-  h3{
+.about-info-top {
+  h3 {
     color: $cloud;
   }
-  h1{
+  h1 {
     color: $cloud;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .about-info-top {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  h3, h1{
-    text-align: center;
-  }
-  
-  
-}
-}
+
 .about-info-bottom {
   color: rgb(34, 149, 47);
   // margin-top: 10%;
   p {
-  color: $cloud;
-  font-size: 20px;
-}
-}
-
-@media screen and (max-width: 768px) {
-  .about-info-bottom{
-  p{
-  text-align: center;
+    color: $cloud;
+    font-size: 20px;
   }
 }
-}
-
 
 
 .box-header {
@@ -220,3 +182,65 @@ $line: #2a6574;
   transform: scale(1.8);
 }
 /* ABOUT slut*/
+
+// @media screen and (max-width: 991px) {
+
+// }
+
+@media screen and (max-width: 784px) {
+  .row-custom {
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-image img {
+    border-radius: 10px;
+    width: 60vw;
+    height: 60vw;
+    margin-top: 50px;
+  }
+  .about-info-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    h1 {
+      text-align: center;
+      font-size: 40px;
+    }
+    h3 {
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+
+  .about-info-bottom {
+    p {
+      text-align: center;
+      font-size: 20px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .about-info-top {
+    h1 {
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 15px;
+    }
+  }
+  .about-info-bottom {
+   p{
+    font-size: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+   }
+  }
+}
+@media screen and (max-width: 480px) {
+  
+}

@@ -25,7 +25,7 @@ function Home() {
             ></path>
           </svg>
         </div>
-        <div className="front-text row col-lg-6 mt-5">
+        <div className="intro-text-container front-text row col-lg-6 mt-5">
           <h2>Hi, i'm Mohammed</h2>
           <h3>Welcome to my portfolio</h3>
           <p>

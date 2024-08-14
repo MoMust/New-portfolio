@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Secular One", sans-serif;
-  height: 100vh;
+  min-height: 500px;
 }
 
 .hide {
@@ -49,7 +49,6 @@
   padding-left: 50px;
   display: flex;
   gap: 50px;
-  font-size: 30px;
 }
 .social-media .social-icons {
   width: 40px;
@@ -91,5 +90,33 @@
 @media screen and (max-width: 991px) {
   .front-side {
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro-text-container h3 {
+    font-size: 40px;
+  }
+  .intro-text-container p {
+    font-size: 20px;
+  }
+  .social-media {
+    gap: 30px;
+  }
+  .social-media .social-icons {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .intro-text-container h3 {
+    font-size: 30px;
+  }
+  .intro-text-container p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .intro-text-container p {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=Home.css.map */
