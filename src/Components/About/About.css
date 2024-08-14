@@ -47,11 +47,6 @@
   max-width: 100%;
 }
 
-@media screen and (max-width: 784px) {
-  .row-custom {
-    gap: 0;
-  }
-}
 /* Profile card */
 .profile-card {
   text-align: center;
@@ -72,14 +67,6 @@
   margin-top: 50px;
 }
 
-@media screen and (max-width: 767px) {
-  .profile-image img {
-    border-radius: 10px;
-    width: 60vw;
-    height: 60vw;
-    margin-top: 50px;
-  }
-}
 .title-color {
   color: rgb(0, 255, 132);
 }
@@ -129,11 +116,6 @@
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .about-info {
-    padding-left: 30px;
-  }
-}
 .about-info-top h3 {
   color: rgb(127, 183, 127);
 }
@@ -141,16 +123,6 @@
   color: rgb(127, 183, 127);
 }
 
-@media screen and (max-width: 768px) {
-  .about-info-top {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .about-info-top h3, .about-info-top h1 {
-    text-align: center;
-  }
-}
 .about-info-bottom {
   color: rgb(34, 149, 47);
 }
@@ -159,11 +131,6 @@
   font-size: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .about-info-bottom p {
-    text-align: center;
-  }
-}
 .box-header {
   display: flex;
 }
@@ -204,4 +171,50 @@
   transform: scale(1.8);
 }
 
-/* ABOUT slut*//*# sourceMappingURL=About.css.map */
+/* ABOUT slut*/
+@media screen and (max-width: 784px) {
+  .row-custom {
+    gap: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .profile-image img {
+    border-radius: 10px;
+    width: 60vw;
+    height: 60vw;
+    margin-top: 50px;
+  }
+  .about-info-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+  }
+  .about-info-top h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .about-info-top h3 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .about-info-bottom p {
+    text-align: center;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .about-info-top h1 {
+    font-size: 30px;
+  }
+  .about-info-top h3 {
+    font-size: 15px;
+  }
+  .about-info-bottom p {
+    font-size: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}/*# sourceMappingURL=About.css.map */
