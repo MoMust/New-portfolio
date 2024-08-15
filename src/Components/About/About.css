@@ -2,7 +2,7 @@
 .hidden {
   opacity: 0;
   filter: blur(5px);
-  transform: translateX(-100%);
+  transform: translateX(-90%);
   transition: all 1s;
 }
 
@@ -32,12 +32,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  height: -moz-fit-content;
-  height: fit-content;
   font-family: "Secular One", sans-serif;
   padding-top: 150px;
   min-height: 100vh;
   max-height: 4000%;
+  overflow: visible; /* Ensure content is visible */
 }
 
 /* Full page slut*/
@@ -45,6 +44,7 @@
   display: flex;
   gap: 5rem;
   max-width: 100%;
+  padding-top: 50px;
 }
 
 /* Profile card */
@@ -178,11 +178,17 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .row-custom {
+    padding-top: 0px;
+  }
+  .profile-card, .about-info {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
   .profile-image img {
     border-radius: 10px;
-    width: 60vw;
-    height: 60vw;
-    margin-top: 50px;
   }
   .about-info-top {
     display: flex;
@@ -201,8 +207,6 @@
   .about-info-bottom p {
     text-align: center;
     font-size: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 }
 @media screen and (max-width: 640px) {

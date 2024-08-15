@@ -6,22 +6,30 @@ import Pic from "../../Images/pfi.png";
 
 function About() {
 
-     useEffect(() => {
-       const observer = new IntersectionObserver((entries) => {
-         entries.forEach((entry) => {
-           if (entry.isIntersecting) {
-             entry.target.classList.add("show");
-           }
-         });
-       });
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            console.log("Intersection entry:", entry); // Debugging log
+            if (entry.isIntersecting) {
+              console.log("Visible:", entry.target); // Log when element is visible
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        {
+          rootMargin: "0px 0px -10% 0px", // Example margin to trigger earlier
+          threshold: 0.1, // Adjust threshold to suit the layout
+        }
+      );
 
-       const hiddenElements = document.querySelectorAll(".hidden");
-       hiddenElements.forEach((el) => observer.observe(el));
+      const hiddenElements = document.querySelectorAll(".hidden");
+      hiddenElements.forEach((el) => observer.observe(el));
 
-       return () => {
-         hiddenElements.forEach((el) => observer.unobserve(el));
-       };
-     }, []);
+      return () => {
+        hiddenElements.forEach((el) => observer.unobserve(el));
+      };
+    }, []);
 
   return (
     <div className="body-class-about" id="about">
@@ -29,8 +37,8 @@ function About() {
         <div className="line-big"></div>
       </div>
       {/* PROFILE CARD */}
-      <div className="row row-custom d-flex justify-content-center pt-5 ">
-        <div className={`profile-card hidden col-lg-4 col-md-4`}>
+      <div className="row row-custom d-flex justify-content-center ">
+        <div className={`profile-card hidden col-lg-4 col-md-4 `}>
           <div className="profile-info-container">
             <div className="profile-image">
               <img src={Pic} alt=""></img>
@@ -38,7 +46,7 @@ function About() {
           </div>
         </div>
         {/* PROFILE CARD END*/}
-        <div className={`about-info hidden col-lg-6 col-md-6 mt-5`}>
+        <div className={`about-info hidden col-lg-6 col-md-6   mt-5`}>
           <div className="about-info-top">
             <div className="header">
               <h1>About me</h1>
