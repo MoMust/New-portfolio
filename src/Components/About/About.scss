@@ -255,14 +255,10 @@ $line: #2a6574;
   }
 }
 
-// @media screen and (max-width: 576px) {
-//   .profile-card, .about-info {
-//     margin-bottom: 2rem; /* Add space between stacked elements */
-//     width: 100%; /* Full width on small screens */
-//     margin-bottom: 2rem; /* Ensure spacing between elements */
-//   }
+@media screen and (max-width: 576px) {
   
-// }
+  
+}
 @media screen and (max-width: 480px) {
   
 }

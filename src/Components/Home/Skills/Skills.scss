@@ -5,17 +5,16 @@ $test: #2a6574;
 $black: #212529;
 
 .category {
-
   .menu {
     background-color: transparent;
-    border:none;
+    border: none;
     display: block;
     position: relative;
-    
 
     .menu-title {
       display: block;
       height: 40px;
+
       text-wrap: wrap;
       padding: 12px 0 0;
       cursor: pointer;
@@ -29,7 +28,7 @@ $black: #212529;
     .menu-title:hover {
       background: $cloud;
       border-radius: 2px;
-      color:$black
+      color: $black;
     }
 
     .menu-dropdown {
@@ -39,9 +38,9 @@ $black: #212529;
       // background: #ebebeb;
       z-index: 100;
       visibility: hidden; /* Initially hidden */
-      opacity: 0; 
-      transform: translateY(-10px); 
-      transition: opacity 0.3s ease, transform 0.3s ease; 
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
 
       .item {
         background-color: $black;
@@ -65,13 +64,12 @@ $black: #212529;
         0.5s margin cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s 0.2s color,
         0.2s background-color;
     }
-
   }
   /* Make dropdown visible on hover */
   .menu:hover > .menu-dropdown {
-    visibility: visible; 
-    opacity: 1; 
-    transform: translateY(0); 
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
   }
   .menu:not(:hover) > .menu-dropdown > * {
     visibility: hidden;
@@ -100,32 +98,38 @@ $black: #212529;
   }
 }
 
-
 @media screen and (max-width: 1460px) {
-    .category-child{
-      h4{
-        font-size: 20px;
-      }
+  .category-child {
+    .menu-title {
+      font-size: 20px;
     }
   }
-  @media screen and (max-width: 1330px) {
-    .category-child{
-      h4{
-        font-size: 16px;
-      }
+}
+@media screen and (max-width: 1330px) {
+  .category-child {
+    .menu-title {
+      font-size: 16px;
     }
   }
+}
 @media screen and (max-width: 640px) {
-    .category-child{
-      h4{
-        font-size: 15px;
-      }
+  .category-child {
+    .menu-title {
+      font-size: 15px;
     }
   }
+}
 @media screen and (max-width: 480px) {
-    .category-child{
-      h4{
-        font-size: 15px;
+  .category-child {
+    .menu {
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+      .menu-title {
+        width: fit-content;
+        font-size: 0.7em;
       }
     }
   }
+}
