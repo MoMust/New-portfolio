@@ -81,22 +81,29 @@
 }
 
 @media screen and (max-width: 1460px) {
-  .category-child h4 {
+  .category-child .menu-title {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 1330px) {
-  .category-child h4 {
+  .category-child .menu-title {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 640px) {
-  .category-child h4 {
+  .category-child .menu-title {
     font-size: 15px;
   }
 }
 @media screen and (max-width: 480px) {
-  .category-child h4 {
-    font-size: 15px;
+  .category-child .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .category-child .menu .menu-title {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 0.7em;
   }
 }/*# sourceMappingURL=Skills.css.map */
