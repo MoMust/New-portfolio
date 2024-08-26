@@ -1,6 +1,7 @@
 
 $base-green: rgb(21, 141, 71);
 $background: rgb(42, 52, 117);
+$background-dark: #28285a;
 // $cloud: rgb(78, 156, 115);
 $cloud: rgb(127, 183, 127);
 $line: #2a6574;
@@ -12,7 +13,7 @@ $black: #212529;
 }
 .body-class-dark {
   height: 100%;
-  background-color: $background;
+  background-color: $background-dark;
   padding: 0;
   margin: 0;
   box-sizing: border-box;

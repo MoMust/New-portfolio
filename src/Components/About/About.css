@@ -13,6 +13,10 @@
 }
 
 /* Full page */
+.line-container {
+  height: 50px;
+}
+
 .line-smal {
   width: 10%;
   height: 3px;
@@ -23,12 +27,13 @@
   width: 70%;
   height: 3px;
   background-color: #2a6574;
-  margin-bottom: 200px;
+  margin-bottom: 500px;
 }
 
 .body-class-about {
   position: relative;
-  background-color: rgb(42, 52, 117);
+  background: #28285a;
+  background: linear-gradient(0deg, rgb(40, 40, 90) 68%, rgb(42, 52, 117) 99%);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -56,7 +61,7 @@
 .profile-text-container {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #212529;
+  background-color: #28285a;
   border-radius: 10px;
 }
 
@@ -181,7 +186,8 @@
   .row-custom {
     padding-top: 0px;
   }
-  .profile-card, .about-info {
+  .profile-card,
+  .about-info {
     display: block;
     opacity: 1;
     visibility: visible;
