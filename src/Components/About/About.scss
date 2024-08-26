@@ -2,7 +2,8 @@
 
 $base-green: rgb(21, 141, 71);
 $background: rgb(42, 52, 117);
-$background-dark: #212529;
+// $background-dark: #212529;
+$background-dark: #28285a;
 // $cloud: rgb(78, 156, 115);
 $cloud: rgb(127, 183, 127);
 $line: #2a6574;
@@ -21,6 +22,9 @@ $line: #2a6574;
 }
 
 /* Full page */
+.line-container {
+  height: 50px;
+}
 .line-smal {
   width: 10%;
   height: 3px;
@@ -31,11 +35,12 @@ $line: #2a6574;
   height: 3px;
   background-color: $line;
   // margin-top: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 500px;
 }
 .body-class-about {
   position: relative;
-  background-color: $background;
+background: $background-dark;
+background: linear-gradient(0deg, rgba(40,40,90,1) 68%, rgba(42,52,117,1) 99%);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -55,13 +60,10 @@ $line: #2a6574;
   padding-top: 50px;
 }
 
-
 /* Profile card */
 .profile-card {
- 
   text-align: center;
   flex-direction: column;
-  
 }
 .profile-text-container {
   padding-top: 20px;
@@ -76,7 +78,6 @@ $line: #2a6574;
   height: 30vw;
   margin-top: 50px;
 }
-
 
 .title-color {
   color: rgb(0, 255, 132);
@@ -126,7 +127,6 @@ $line: #2a6574;
   padding-bottom: 20px;
 }
 
-
 .about-info-top {
   h3 {
     color: $cloud;
@@ -136,7 +136,6 @@ $line: #2a6574;
   }
 }
 
-
 .about-info-bottom {
   color: rgb(34, 149, 47);
   // margin-top: 10%;
@@ -145,7 +144,6 @@ $line: #2a6574;
     font-size: 20px;
   }
 }
-
 
 .box-header {
   display: flex;
@@ -198,14 +196,15 @@ $line: #2a6574;
 }
 
 @media screen and (max-width: 768px) {
-  .row-custom{
+  .row-custom {
     padding-top: 0px;
   }
-    .profile-card, .about-info {
+  .profile-card,
+  .about-info {
     display: block; // Make sure content is not
-    opacity: 1; 
-    visibility: visible; 
-    transform: none; 
+    opacity: 1;
+    visibility: visible;
+    transform: none;
   }
   .profile-image img {
     border-radius: 10px;
@@ -247,18 +246,15 @@ $line: #2a6574;
     }
   }
   .about-info-bottom {
-   p{
-    font-size: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-   }
+    p {
+      font-size: 15px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
   }
 }
 
 @media screen and (max-width: 576px) {
-  
-  
 }
 @media screen and (max-width: 480px) {
-  
 }

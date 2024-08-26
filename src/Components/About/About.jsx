@@ -33,7 +33,7 @@ function About() {
 
   return (
     <div className="body-class-about" id="about">
-      <div className="d-flex justify-content-center">
+      <div className="line-container d-flex justify-content-center">
         <div className="line-big"></div>
       </div>
       {/* PROFILE CARD */}
