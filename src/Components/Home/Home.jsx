@@ -8,6 +8,52 @@ import PsychologyIcon from "@mui/icons-material/Psychology";
 import Skill from "./Skills/Skills";
 
 function Home() {
+  const SKILLOBJECTS = [
+    {
+      title: "DEVELOPMENT",
+      icon: DeveloperBoardIcon,
+      width: "50px",
+      height: "50px",
+      list: [
+        "HTML",
+        "CSS",
+        "SASS",
+        "JavaScript",
+        "React",
+        "React.Native",
+        "Redux",
+        "Wordpress",
+        "Webflow",
+        "Node.JS",
+        "MySQL",
+        "Strapi",
+      ],
+    },
+    {
+      title: "TOOLS",
+      icon: ConstructionIcon,
+      width: "50px",
+      height: "50px",
+      list: [
+        "VSC",
+        "IntelliJ",
+        "Figma",
+        "Git - Github",
+        "NPM",
+        "Postman",
+        "Shortcut",
+        "Slack",
+      ],
+    },
+    {
+      title: "KNOWLEDGE",
+      icon: PsychologyIcon,
+      width: "50px",
+      height: "50px",
+      list: ["SEO", "UX", "ECMAScript 6", "MVC", "DevOps"],
+    },
+  ];
+  
   return (
     <div className="body-class" id="home">
       <div className="container-front row d-flex justify-content-center mt-0 m-0 p-0 gap-4">
@@ -66,46 +112,16 @@ function Home() {
           </div>
         </div>
         <div className="row front-side col-lg-5 pt-md-5 mt-5 px-4">
-          <Skill
+          {SKILLOBJECTS.map(({title, icon: Icon, list, width, height}) =>(
+            <Skill
             icon={
-              <DeveloperBoardIcon style={{ width: "50px", height: "50px" }} />
+             <Icon style={{ width, height }} />
             }
-            title={"DEVELOPMENT"}
-            list={[
-              "HTML",
-              "CSS",
-              "SASS",
-              "JavaScript",
-              "React",
-              "React.Native",
-              "Redux",
-              "Wordpress",
-              "Node.JS",
-              "MySQL",
-              "Strapi",
-            ]}
+            title={title}
+            list={list}
           />
-          <Skill
-            icon={
-              <ConstructionIcon style={{ width: "50px", height: "50px" }} />
-            }
-            title={"TOOLS"}
-            list={[
-              "VSC",
-              "IntelliJ",
-              "Figma",
-              "Git - Github",
-              "NPM",
-              "Postman",
-              "Shortcut",
-              "Slack",
-            ]}
-          />
-          <Skill
-            icon={<PsychologyIcon style={{ width: "50px", height: "50px" }} />}
-            title={"KNOWLEDGE"}
-            list={["SEO", "UX", "ECMAScript 6", "MVC", "DevOps"]}
-          />
+          ))}
+         
         </div>
       </div>
     </div>
