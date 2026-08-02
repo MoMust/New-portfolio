@@ -21,16 +21,16 @@ function Nav() {
       <nav>
         <div className="nav-bar">
           <ul>
-            {navItems.map(({ to, lable, offset, duration }) => (
+            {navItems.map(({ to, lable, offset, duration, className }) => (
               <Link
                 exact
-                to="home"
+                to={to}
                 spy={true}
                 smooth={true}
-                offset={0}
-                duration={150}
-                className="nav-items"
-                data-section="Home"
+                offset={offset}
+                duration={duration}
+                className={`nav-items ${className}`} 
+                data-section={lable}
               ></Link>
             ))}
           </ul>
