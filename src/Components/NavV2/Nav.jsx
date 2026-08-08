@@ -4,11 +4,11 @@ import "./NavStyle.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const navItems = [
-  { to: "home", lable: "Home", offset: 0, duration: 150 },
-  { to: "about", lable: "About", offset: 150, duration: 500 },
-  { to: "myWork", lable: "projects", offset: 150, duration: 500 },
+  { to: "home", label: "Home", offset: 0, duration: 150 },
+  { to: "about", label: "About", offset: 150, duration: 500 },
+  { to: "myWork", label: "projects", offset: 150, duration: 500 },
   { to:"contact",
-  lable:"Contact",
+  label:"Contact",
     offset: 150,
     duration: 500,
     className: "contact-link"
@@ -21,7 +21,7 @@ function Nav() {
       <nav>
         <div className="nav-bar">
           <ul>
-            {navItems.map(({ to, lable, offset, duration, className }) => (
+            {navItems.map(({ to, label, offset, duration, className }) => (
               <Link
                 exact
                 to={to}
@@ -30,7 +30,7 @@ function Nav() {
                 offset={offset}
                 duration={duration}
                 className={`nav-items ${className}`} 
-                data-section={lable}
+                data-section={label}
               ></Link>
             ))}
           </ul>
