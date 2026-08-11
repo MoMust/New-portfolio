@@ -9,7 +9,7 @@ const ProjectContent = ({setImageModal, img1, img2}) => {
         data-bs-target="#exampleModal"
         onClick={() => setImageModal(img1)}
       >
-        <img id="img1" src={img1} alt=""></img>
+        <img id="img1" src={img1} alt="" loading="lazy" />
       </div>
       <div
         className="content-work-img col-lg-6"
@@ -17,7 +17,7 @@ const ProjectContent = ({setImageModal, img1, img2}) => {
         data-bs-target="#exampleModal"
         onClick={() => setImageModal(img2)}
       >
-        <img id="img1" src={img2} alt=""></img>
+        <img id="img1" src={img2} alt="" loading="lazy" />
       </div>
     </div>
   );

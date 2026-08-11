@@ -55,7 +55,7 @@ const ImageModal = (props) => {
             </div>
 
             <div className="modal-body border-0">
-              <img src={props.imageModal} alt=''></img>
+              <img src={props.imageModal} alt='' loading="lazy" />
             </div>
           </div>
         </div>

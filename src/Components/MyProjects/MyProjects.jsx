@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import "./MyProjects.css";
-import velo1 from "../../Images/velo1.png";
-import velo2 from "../../Images/velo2.png";
-import velo3 from "../../Images/velo3.png";
-import velo4 from "../../Images/velo4.png";
+import velo1 from "../../Images/velo1.webp";
+import velo2 from "../../Images/velo2.webp";
+import velo3 from "../../Images/velo3.webp";
+import velo4 from "../../Images/velo4.webp";
 
-import trip1 from "../../Images/trip1.png";
-import trip2 from "../../Images/trip2.png";
+import trip1 from "../../Images/trip1.webp";
+import trip2 from "../../Images/trip2.webp";
 import trip3 from "../../Images/trip3.png";
-import trip4 from "../../Images/trip4.png";
+import trip4 from "../../Images/trip4.webp";
 
 import smart1 from "../../Images/smart1.png";
 import smart2 from "../../Images/smart2.png";
-import smart3 from "../../Images/smart3.png";
+import smart3 from "../../Images/smart3.webp";
 import smart4 from "../../Images/smart4.png";
 
 import show1 from "../../Images/show1.png";
