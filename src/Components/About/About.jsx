@@ -41,7 +41,7 @@ function About() {
         <div className={`profile-card hidden col-lg-4 col-md-4 `}>
           <div className="profile-info-container">
             <div className="profile-image">
-              <img src={Pic} alt=""></img>
+              <img src={Pic} alt="" loading="lazy" />
             </div>
           </div>
         </div>
